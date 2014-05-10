@@ -1,0 +1,88 @@
+<?php
+
+
+
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+#  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * @package UFM
+*
+*
+ * @link 
+ */
+
+/**
+ * Prints the title for the custom action page.
+ */
+function action_update_sexe_print_title() {
+	echo '<tr class="form-title">';
+	echo '<td colspan="2">';
+	echo lang_get( 'update_sexe_title' );
+	echo '</td></tr>';
+}
+
+/**
+ * Prints the field within the custom action form.  This has an entry for
+ * every field the user need to supply + the submit button.  The fields are
+ * added as rows in a table that is already created by the calling code.
+ * A row has two columns.
+ */
+function action_update_sexe_print_fields() {
+	echo '<tr class="row-1" valign="top"><td class="description">';
+	echo lang_get( 'update_sexe_msg' );
+	echo '</td><td><select name="sexe">';
+	print_enum_string_option_list( 'sexe' );
+	echo '</select></td></tr>';
+	echo '<tr><td colspan="2"><center><input type="submit"  value="' . lang_get( 'update_sexe_button' ) . ' " /></center></td></tr>';
+}
+
+/**
+ * Validates the action on the specified bug id.
+ *
+ * @returns true    Action can be applied.
+ * @returns array( bug_id => reason for failure )
+ */
+function action_update_sexe_validate( $p_bug_id ) {
+	$f_sexe = gpc_get_string( 'sexe' );
+
+	$t_failed_validation_ids = array();
+
+	$t_update_sexe_threshold = config_get( 'update_bug_threshold' );
+	$t_bug_id = $p_bug_id;
+
+	if ( bug_is_readonly( $t_bug_id ) ) {
+		$t_failed_validation_ids[$t_bug_id] = lang_get( 'actiongroup_error_issue_is_readonly' );
+		return $t_failed_validation_ids;
+	}
+
+	if ( !access_has_bug_level( $t_update_sexe_threshold, $t_bug_id ) ) {
+		$t_failed_validation_ids[$t_bug_id] = lang_get( 'access_denied' );
+		return $t_failed_validation_ids;
+	}
+
+	return true;
+}
+
+/**
+ * Executes the custom action on the specified bug id.
+ *
+ * @param $p_bug_id  The bug id to execute the custom action on.
+ *
+ * @returns true   Action executed successfully.
+ * @returns array( bug_id => reason for failure )
+ */
+function action_update_sexe_process( $p_bug_id ) {
+	$f_sexe = gpc_get_string( 'sexe' );
+	bug_set_field( $p_bug_id, 'sexe', $f_sexe );
+	return true;
+}

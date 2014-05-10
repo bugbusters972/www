@@ -1,0 +1,182 @@
+@charset "ISO-8859-1";
+
+body {
+    background-color: #FFFFFF;
+    font-family: wf_segoe-ui_light, "wf_SegoeUILight","wf_SegoeUI","Segoe UI Light","Segoe WP Light","Segoe UI",Segoe,"Segoe WP","Tahoma","Verdana","Helvetica","Arial","sans-serif";
+    height: 660px;
+    width: 374px;
+    padding-left: 35px;
+    overflow: hidden;
+    
+}
+
+.calendrier {
+    background-color: #FAF5E6;
+    color: #377395;
+    float: left;
+    height: 280px;
+    margin-bottom: 25px;
+    margin-top: 16px;
+    text-align: center;
+    width: 300px;
+}
+.calendrier h1 {
+    background-color: #377395;
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    height: 37px;
+    margin: 0;
+    padding-top: 6px;
+    width: 100%;
+}
+.calendrier h2 {
+    color: #377395;
+    float: left;
+    font-size: 140px;
+    margin: 0;
+    width: 100%;
+}
+.calendrier h3 {
+    color: #377395;
+    float: left;
+    font-size: 27px;
+    margin: 0;
+    width: 100%;
+}
+.pointeuse {
+    background-color: #377395;
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    height: 227px;
+    text-align: center;
+    width: 300px;
+    padding-top:20px;
+}
+.vousetes {
+    background: url("icon_user_03.gif") no-repeat scroll 15px 9px #14222A;
+    border: 1px solid #11A8AB;
+    font-size: 16px;
+    margin-top: 21px;
+    padding-left: 30px;
+    width: 270px;
+    height:50px;
+    padding-top:12px;
+}
+
+.pointeuse .btn {
+    background-color:#FFA500;
+    height:40px;
+    margin: 27px 64px;
+    padding-top:10px;
+    width:175px;
+}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+
+a:hover{
+	color:#ffffff;
+}
+	
+a:visited{
+	text-decoration:none;
+	color:#000000;
+}
+
+#point_body{
+	width:360px;
+	height:600px;
+	margin-top:30px;
+	margin-left:0px;
+	padding:0;
+}
+
+#point_body #form_container{
+background-color:#faf5e6;
+text-align:center;
+}
+
+#point_body #form_container ul{
+	list-style-type:none;
+}
+
+#form_container label{
+	clear:right;
+}
+
+.form_description {
+	padding-top:10px;
+}
+.btnpause{
+	float:left;
+	background-color:rgb(2,208,148);
+	width:300px;
+	margin-bottom:25px;
+	text-align:center;
+}
+.btnpause-hover{
+background-color:#02b582;
+color:#ffffff;
+cursor:pointer;
+}
+
+.btnpause h6 {
+    height: 9px;
+    margin: 0;
+    width: 100%;
+	background-color:#31FFC3;
+	float:left;
+}
+
+.btnpause span{
+	background-color:#008044;
+	width:100%;
+	
+}
+
+.btnpause h3{
+	margin-bottom:0px;
+	margin-top: 5px;
+}
+.btn a{
+	color:#ffffff;
+}
+
+.btn a:hover{
+	color:#000000;
+}
+
+.menupause,.refresh {
+	display:none;
+	height:680px;
+	width:374px;
+	color:#377395;
+	padding-top:40px;
+	
+}
+
+.annul {
+    background-color: #D8D8D8;
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+
+.annul a{
+	cursor:pointer;
+}
+
+.refresh p {
+	text-align:center;
+	padding-top:200px;
+	width:300px;
+}
+
+.refresh p>a {
+	color:#377395;
+}
+

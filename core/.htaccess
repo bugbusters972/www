@@ -1,0 +1,4 @@
+## no access to this folder
+order allow,deny
+deny from all
+SetEnv PHP_VER 5

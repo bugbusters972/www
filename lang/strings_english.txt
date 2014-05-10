@@ -1,0 +1,1774 @@
+<?php
+/** MantisBT - a php based bugtracking system
+ *
+ * Copyright (C) 2000 - 2002  Kenzaburo Ito - kenito@300baud.org
+ * Copyright (C) 2002 - 2013  MantisBT Team - 
+ *
+ * MantisBT is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * MantisBT is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MantisBT.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/** English (English)
+ *
+ * See the qqq 'language' for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
+ * @ingroup Language
+ * @file
+ *
+ * @author Kenzaburo Ito, kenito@300baud.org
+ * @author various developers
+ */
+
+# Script directionality (currently supported: ltr and rtl)
+$s_directionality = 'ltr';
+
+# Group commands menuitems
+$s_actiongroup_menu_move = 'Move';
+$s_actiongroup_menu_copy = 'Copy';
+$s_actiongroup_menu_assign = 'Assigner';
+$s_actiongroup_menu_close = 'Close';
+$s_actiongroup_menu_delete = 'Supprimer';
+$s_actiongroup_menu_resolve = 'Resolve';
+$s_actiongroup_menu_update_motif_contact = 'Update motif_contact';
+$s_actiongroup_menu_update_status = 'Update Status';
+$s_actiongroup_menu_update_sexe = 'Update sexe';
+$s_actiongroup_menu_update_view_status = 'Update View Status';
+$s_actiongroup_menu_update_category = 'Update Category';
+$s_actiongroup_menu_set_sticky = 'Set/Unset Sticky';
+$s_actiongroup_menu_update_field = 'Update %1$s';
+$s_actiongroup_menu_update_target_version = 'Update Target Version';
+$s_actiongroup_menu_update_fixed_in_version = 'Update Fixed in Version';
+$s_actiongroup_menu_update_product_build = 'Update Product Build';
+$s_actiongroup_menu_add_note = 'Add note';
+$s_actiongroup_menu_attach_tags = 'Attach Tags';
+$s_actiongroup_bugs = 'Dossier selectionn&eacute;';
+$s_actiongroup_error_issue_is_readonly = 'Issue is readonly.';
+
+# new strings:
+$s_all_projects = 'All Projects';
+$s_move_bugs = 'Move Issues';
+$s_operation_successful = 'Operation r&eacute;ussie.';
+$s_date_order = 'Date Order';
+$s_print_all_bug_page_link = 'Imprimer';
+$s_csv_export = 'Export CSV';
+$s_excel_export = 'Export Excel';
+$s_login_anonymously = 'Login Anonymously';
+$s_anonymous = 'Anonymous';
+$s_jump_to_bugnotes = 'Jump to Notes';
+$s_public_project_msg = 'This project is public. All users have access.';
+$s_private_project_msg = 'This project is private. Only administrators and manually added users have access.';
+$s_access_level_project = 'Project Access Level';
+$s_view_submitted_bug_link = 'Voir le dossier %1$s';
+$s_assigned_projects = 'Dossiers assign&eacute;s';
+$s_unassigned_projects = 'Unassigned Projects';
+$s_print = 'imprimer';
+$s_jump = 'Aller';
+$s_copy_users = 'Copy Users';
+$s_copy_categories_from = 'Copy Categories From';
+$s_copy_categories_to = 'Copy Categories To';
+$s_copy_versions_from = 'Copy Versions From';
+$s_copy_versions_to = 'Copy Versions To';
+$s_copy_users_from = 'Copy Users From';
+$s_copy_users_to = 'Copy Users To';
+$s_bug_history = 'Historique du dossier';
+$s_field = '&Eacute;l&eacute;ment';
+$s_old_value = 'Old Value';
+$s_new_value = 'New Value';
+$s_date_modified = 'Mises &agrave; jour';
+$s_note =$s_bugnote = 'Probl&egrave;me';
+$s_change = 'Modification';
+$s_bugnote_view_state = 'Note View State';
+$s_bug_monitor = 'Issue Monitored';
+$s_bug_end_monitor = 'Issue End Monitor';
+$s_announcement = 'Announcement';
+$s_stays_on_top = 'Stays on Top';
+$s_bugnote_link_title = 'Aller au probl&egrave;me';
+$s_delete_bugnote_button = 'Supprimer probl&egrave;me';
+$s_delete_bugnote_sure_msg = '&Ecirc;tes vous sur?';
+$s_bug_relationships = 'Relationships';
+$s_empty_password_sure_msg = 'The user has an empty password. Are you sure that is what you want?';
+$s_empty_password_button = 'Use Empty Password';
+$s_reauthenticate_title = 'Identifiez-vous';
+$s_reauthenticate_message = 'You are visiting a secure page, and your secure session has expired. Please authenticate yourself to continue.';
+
+$s_no_category = '(No Category)';
+$s_global_categories = 'Global Categories';
+$s_inherit = 'Inherit Categories';
+$s_inherit_global = 'Inherit Global Categories';
+$s_inherit_parent = 'Inherit Parent Categories';
+$s_update_subproject_inheritance = 'Update Subproject Inheritance';
+
+$s_duplicate_of = 'duplicate of';
+$s_has_duplicate = 'has duplicate';
+$s_related_to = 'related to';
+$s_dependant_on = 'parent of';
+$s_blocks = 'child of';
+
+$s_new_bug = 'New Issue';
+$s_bugnote_added = 'Note Added';
+$s_bugnote_edited = 'Note Edited';
+$s_bugnote_deleted = 'Note Deleted';
+$s_summary_updated = 'Summary Updated';
+$s_description_updated = 'Description Updated';
+$s_date_nvvenue_updated = 'Date de la nouvelle venue mise &agrave; jour';
+$s_motif_nvvenue_updated = 'Motif de la nouvelle venue enregistr&eacute;';
+$s_file_added = 'File Added';
+$s_file_deleted = 'File Deleted';
+$s_bug_deleted = 'Issue Deleted';
+
+$s_make_private = 'Make Private';
+$s_make_public = 'Make Public';
+
+$s_create_new_project_link = 'Create New Project';
+
+$s_login_link = 'Se connecter';
+$s_select_option = '(select)'; # comboboxes default to this to instruct user to explicitly select an entry.
+
+# bug_actiongroup_page.php : mass treatment
+$s_bug_actiongroup_access = 'You did not have appropriate permissions to perform that action.';
+$s_bug_actiongroup_status = 'This issue cannot be changed to the requested status';
+$s_bug_actiongroup_category = 'This issue cannot be changed to the requested category';
+$s_bug_actiongroup_handler = 'The requested user is not allowed to handle this issue';
+$s_bug_actiongroup_version = 'The requested version does not exist in this issue\'s project';
+$s_close_bugs_conf_msg = '&Ecirc;tes-vous sure de vouloir fermer ce dossier?';
+$s_delete_bugs_conf_msg = '&Ecirc;tes-vous sure de vouloir suprimer ce dossier?';
+$s_move_bugs_conf_msg = 'Move issues to';
+$s_copy_bugs_conf_msg = 'Copy issues to';
+$s_assign_bugs_conf_msg = 'Assign issues to';
+$s_resolve_bugs_conf_msg = 'Choose issues resolution';
+$s_motif_contact_bugs_conf_msg = 'Choose issues motif_contact';
+$s_status_bugs_conf_msg = 'Choose issues status';
+$s_view_status_bugs_conf_msg = 'Choose issues view status';
+$s_category_bugs_conf_msg = 'Choose issues category';
+$s_set_sticky_bugs_conf_msg = 'Are you sure you wish to set/unset these issues sticky?';
+$s_fixed_in_version_bugs_conf_msg = 'Update Fixed in Version to';
+$s_target_version_bugs_conf_msg = 'Update Target Version to';
+$s_close_group_bugs_button = 'Fermer un dossier';
+$s_delete_group_bugs_button = 'Supprimer le dossier';
+$s_move_group_bugs_button = 'Move Issues';
+$s_copy_group_bugs_button = 'Copy Issues';
+$s_assign_group_bugs_button = 'Assign Issues';
+$s_resolve_group_bugs_button = 'Resolve Issues';
+$s_motif_contact_group_bugs_button = 'Update motif_contact';
+$s_status_group_bugs_button = 'Update Status';
+$s_category_group_bugs_button = 'Update Category';
+$s_view_status_group_bugs_button = 'Update View Status';
+$s_set_sticky_group_bugs_button = 'Set/Unset Sticky';
+$s_fixed_in_version_group_bugs_button = 'Update Fixed in Version';
+$s_target_version_group_bugs_button = 'Update Target Version';
+$s_update_sexe_title = 'Update sexe';
+$s_update_sexe_msg = 'Choose issue sexe';
+$s_update_sexe_button = 'Update sexe';
+
+# print_all_bug_page.php : display selected issues
+$s_hide_button = 'Display selected only';
+
+# print_all_bug_options.php : printing preferences
+$s_printing_preferences_title = 'Choose fields to print';
+$s_printing_options_link = 'Printing Options';
+
+# word and excel export
+$s_bugnote_title = 'Note handler';
+$s_bugnote_date = 'Date of note';
+$s_bugnote_description = 'Note description';
+
+$s_error_no_proceed = 'Utiliser le bouton "Pr&eacute;c&eacute;dent" de votre navigateur pour retourner &agrave; la page pr&eacute;c&eacute;dente. Corrigez l&apos;erreur identifi&eacute;e dans le message ci-dessus ou effectuez une action diff&eacute;rente. Vous pouvez &eacute;galement vous diriger vers une autre rubrique via le menu.';
+
+# ERROR strings
+$MANTIS_ERROR[ERROR_GENERIC] = 'An error occurred during this action. You may wish to report this error to your local administrator.';
+$MANTIS_ERROR[ERROR_SQL] = 'SQL error detected.';
+$MANTIS_ERROR[ERROR_REPORT] = 'There was an error in your report.';
+$MANTIS_ERROR[ERROR_NO_FILE_SPECIFIED] = 'No file specified.';
+$MANTIS_ERROR[ERROR_FILE_DISALLOWED] = 'The file type is disallowed.';
+$MANTIS_ERROR[ERROR_NO_DIRECTORY] = 'The directory does not exist. Please check the project settings.';
+$MANTIS_ERROR[ERROR_DUPLICATE_PROJECT] = 'A project with that name already exists.';
+$MANTIS_ERROR[ERROR_EMPTY_FIELD] = 'Le champ "%1$s" est requis. Merci de v&eacute;rifier votre saisie.';
+$MANTIS_ERROR[ERROR_PROTECTED_ACCOUNT] = 'This account is protected. You are not allowed to access this until the account protection is lifted.';
+$MANTIS_ERROR[ERROR_ACCESS_DENIED] = 'Access Denied.';
+$MANTIS_ERROR[ERROR_UPLOAD_FAILURE] = 'File upload failed. File is not readable by Site. Please check the project settings.';
+$MANTIS_ERROR[ERROR_FILE_TOO_BIG] = 'Echec de l&apos;envoi. Le fichier est trop volumineux.';
+$MANTIS_ERROR[ERROR_GPC_VAR_NOT_FOUND] = 'A required parameter to this page (%1$s) was not found.';
+$MANTIS_ERROR[ERROR_USER_NAME_NOT_UNIQUE] = 'That username is already being used. Please go back and select another one.';
+$MANTIS_ERROR[ERROR_CONFIG_OPT_NOT_FOUND] = 'Configuration option "%1$s" not found.';
+$MANTIS_ERROR[ERROR_CONFIG_OPT_CANT_BE_SET_IN_DB] = 'Configuration option "%1$s" can not be set in the database. It must be set in config_inc.php.';
+$MANTIS_ERROR[ERROR_LANG_STRING_NOT_FOUND] = 'String "%1$s" not found.';
+$MANTIS_ERROR[ERROR_BUGNOTE_NOT_FOUND] = 'Note not found.';
+$MANTIS_ERROR[ERROR_PROJECT_NOT_FOUND] = 'Project "%1$d" not found.';
+$MANTIS_ERROR[ERROR_DB_FIELD_NOT_FOUND] = 'Database field "%1$s" not found.';
+$MANTIS_ERROR[ERROR_FTP_CONNECT_ERROR] = 'Unable to connect to FTP server.';
+$MANTIS_ERROR[ERROR_HANDLER_ACCESS_TOO_LOW] = 'Issue handler does not have sufficient access rights to handle issue at this status.';
+$MANTIS_ERROR[ERROR_PROJECT_NAME_NOT_UNIQUE] = 'A project with that name already exists. Please go back and enter a different name.';
+$MANTIS_ERROR[ERROR_PROJECT_NAME_INVALID] = 'Invalid project name specified. Project names cannot be blank.';
+$MANTIS_ERROR[ERROR_USER_BY_NAME_NOT_FOUND] = 'L&apos;utilisateur "%1$s" n&apos;existe pas.';
+$MANTIS_ERROR[ERROR_USER_BY_ID_NOT_FOUND] = 'User with id "%1$d" not found.';
+$MANTIS_ERROR[ERROR_AUTH_INVALID_COOKIE] = 'The login information stored by your browser is invalid. Perhaps your account was deleted?';
+$MANTIS_ERROR[ERROR_USER_PREFS_NOT_FOUND] = 'Preferences could not be found for this user.';
+$MANTIS_ERROR[ERROR_NEWS_NOT_FOUND] = 'News item not found.';
+$MANTIS_ERROR[ERROR_USER_CREATE_PASSWORD_MISMATCH] = 'Password does not match verification.';
+$MANTIS_ERROR[ERROR_GPC_ARRAY_EXPECTED] = 'An array was expected but a string was received for %1$s.';
+$MANTIS_ERROR[ERROR_GPC_ARRAY_UNEXPECTED] = 'A string was expected but an array was received for %1$s.';
+$MANTIS_ERROR[ERROR_GPC_NOT_NUMBER] = 'A number was expected for %1$s.';
+$MANTIS_ERROR[ERROR_BUG_NOT_FOUND] = 'Le num&eacute;ro de dossier %1$d n&apos;existe pas.';
+$MANTIS_ERROR[ERROR_FILTER_NOT_FOUND] = 'Filter %1$s not found.';
+$MANTIS_ERROR[ERROR_FILTER_TOO_OLD] = 'The filter you are trying to use is too old to be upgraded. Please re-create it.';
+$MANTIS_ERROR[ERROR_EMAIL_INVALID] = 'Adress e-mail invalide.';
+$MANTIS_ERROR[ERROR_EMAIL_DISPOSABLE] = 'It is not allowed to use disposable e-mail addresses.';
+$MANTIS_ERROR[ERROR_USER_PROFILE_NOT_FOUND] = 'Profile not found.';
+$MANTIS_ERROR[ERROR_FILE_NOT_ALLOWED] = 'File type not allowed for uploads.';
+$MANTIS_ERROR[ERROR_FILE_DUPLICATE] = 'This is a duplicate file. Please delete the file first.';
+$MANTIS_ERROR[ERROR_FILE_INVALID_UPLOAD_PATH] = 'Invalid upload path. Directory either does not exist or not writable to webserver.';
+$MANTIS_ERROR[ERROR_FILE_NO_UPLOAD_FAILURE] = 'No file was uploaded. Please go back and Choose a file before pressing Upload.';
+$MANTIS_ERROR[ERROR_FILE_MOVE_FAILED] = 'Uploaded file could not be moved to the file storage directory. Directory either does not exist or not writable to webserver.';
+$MANTIS_ERROR[ERROR_BUG_DUPLICATE_SELF] = 'You cannot set an issue as a duplicate of itself.';
+$MANTIS_ERROR[ERROR_BUG_REVISION_NOT_FOUND] = 'Issue revision not found.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_NOT_FOUND] = 'Custom field not found.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_NAME_NOT_UNIQUE] = 'This is a duplicate name.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_IN_USE] = 'At least one project still uses this field.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_VALUE] = 'Invalid value for field "%1$s".';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_DEFINITION] = 'Invalid custom field definition.';
+$MANTIS_ERROR[ERROR_CUSTOM_FIELD_INVALID_PROPERTY] = 'Invalid custom field property (%1$s).';
+$MANTIS_ERROR[ERROR_LDAP_AUTH_FAILED] = 'LDAP Authentication Failed.';
+$MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'LDAP Server Connection Failed.';
+$MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'LDAP Record Update has failed.';
+$MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'LDAP User Record Not Found.';
+$MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'LDAP Extension Not Loaded.';
+$MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'Database connection failed. Error received from database was #%1$d: %2$s.';
+$MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'Database query failed. Error received from database was #%1$d: %2$s for the query: %3$s.';
+$MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'Database selection failed. Error received from database was #%1$d: %2$s.';
+$MANTIS_ERROR[ERROR_CATEGORY_DUPLICATE] = 'A category with that name already exists.';
+$MANTIS_ERROR[ERROR_CATEGORY_NO_ACTION] = 'No copy action was specified.';
+$MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'Category not found.';
+$MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT] = 'Category "%1$s" not found for project "%2$s".';
+$MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_DEFAULT] = 'This Category cannot be deleted, because it is defined as "Default Category For Moves".';
+$MANTIS_ERROR[ERROR_VERSION_DUPLICATE] = 'A version with that name already exists.';
+$MANTIS_ERROR[ERROR_VERSION_NOT_FOUND] = 'Version "%1$s" not found.';
+$MANTIS_ERROR[ERROR_USER_NAME_INVALID] = 'The username is invalid. Usernames may only contain Latin letters, numbers, spaces, hyphens, dots, plus signs and underscores.';
+$MANTIS_ERROR[ERROR_USER_REAL_NAME_INVALID] = 'The user real name is invalid.';
+$MANTIS_ERROR[ERROR_USER_DOES_NOT_HAVE_REQ_ACCESS] = 'User does not have required access level.';
+$MANTIS_ERROR[ERROR_USER_REAL_MATCH_USER] = 'The "Real Name" chosen matches another user\'s login name. Please choose another.';
+$MANTIS_ERROR[ERROR_SPONSORSHIP_NOT_ENABLED] = 'Sponsorship support not enabled.';
+$MANTIS_ERROR[ERROR_SPONSORSHIP_NOT_FOUND] = 'Sponsorship %1$d not found.';
+$MANTIS_ERROR[ERROR_SPONSORSHIP_AMOUNT_TOO_LOW] = 'Sponsorship (%1$s) is below minimum amount (%2$s).';
+$MANTIS_ERROR[ERROR_SPONSORSHIP_HANDLER_ACCESS_LEVEL_TOO_LOW] = 'Handler does not have the required access level to handle sponsored issues.';
+$MANTIS_ERROR[ERROR_SPONSORSHIP_ASSIGNER_ACCESS_LEVEL_TOO_LOW] = 'Access Denied: Assigning sponsored issues requires higher access level.';
+$MANTIS_ERROR[ERROR_SPONSORSHIP_SPONSOR_NO_EMAIL] = 'Sponsor has not provided an e-mail address. Please update your profile.';
+$MANTIS_ERROR[ERROR_CONFIG_OPT_INVALID] = 'Configuration option "%1$s" has invalid value "%2$s".';
+$MANTIS_ERROR[ERROR_BUG_READ_ONLY_ACTION_DENIED] = 'The action cannot be performed because issue "%1$d" is read-only.';
+$MANTIS_ERROR[ERROR_RELATIONSHIP_ALREADY_EXISTS] = 'There is already a relationship between these two issues.';
+$MANTIS_ERROR[ERROR_RELATIONSHIP_NOT_FOUND] = 'Relationship not found.';
+$MANTIS_ERROR[ERROR_RELATIONSHIP_ACCESS_LEVEL_TO_DEST_BUG_TOO_LOW] = 'Access denied: The issue %1$d requires higher access level.';
+$MANTIS_ERROR[ERROR_RELATIONSHIP_SAME_BUG] = 'An issue cannot be related to itself.';
+$MANTIS_ERROR[ERROR_SIGNUP_NOT_MATCHING_CAPTCHA] = 'Confirmation hash does not match. Please retry.';
+$MANTIS_ERROR[ERROR_LOST_PASSWORD_NOT_ENABLED] = 'The "lost your password" feature is not available.';
+$MANTIS_ERROR[ERROR_LOST_PASSWORD_NO_EMAIL_SPECIFIED] = 'You must provide an e-mail address in order to reset the password.';
+$MANTIS_ERROR[ERROR_LOST_PASSWORD_NOT_MATCHING_DATA] = 'The provided information does not match any registered account!';
+$MANTIS_ERROR[ERROR_LOST_PASSWORD_CONFIRM_HASH_INVALID] = 'Ce lien de confirmation est invalide ou a d&eacute;j&agrave; &eacute;t&eacute; utilis&eacute;, veuillez recommencer votre inscription. Si le probl&egrave;me persiste, contactez votre administrateur';
+$MANTIS_ERROR[ERROR_LOST_PASSWORD_MAX_IN_PROGRESS_ATTEMPTS_REACHED] = 'Maximum number of in-progress requests reached. Please contact the system administrator.';
+$MANTIS_ERROR[ERROR_PROJECT_RECURSIVE_HIERARCHY] = 'That operation would create a loop in the subproject hierarchy.';
+$MANTIS_ERROR[ERROR_USER_CHANGE_LAST_ADMIN] = 'You cannot remove or demote the last administrator account. To perform the action you requested, you first need to create another administrator account.';
+$MANTIS_ERROR[ERROR_PAGE_REDIRECTION] = 'Page redirection error, ensure that there are no spaces outside the PHP block (&lt;?php ?&gt;) in config_inc.php or custom_*.php files.';
+$MANTIS_ERROR[ERROR_TWITTER_NO_CURL_EXT] = 'Twitter integration requires PHP cURL extension which is not installed.';
+$MANTIS_ERROR[ERROR_TAG_NOT_FOUND] = 'Could not find a tag with that name.';
+$MANTIS_ERROR[ERROR_TAG_DUPLICATE] = 'A tag already exists with that name.';
+$MANTIS_ERROR[ERROR_TAG_NAME_INVALID] = 'That tag name is invalid.';
+$MANTIS_ERROR[ERROR_TAG_NOT_ATTACHED] = 'That tag is not attached to that issue.';
+$MANTIS_ERROR[ERROR_TAG_ALREADY_ATTACHED] = 'That tag already attached to that issue.';
+$MANTIS_ERROR[ERROR_TOKEN_NOT_FOUND] = 'Token could not be found.';
+$MANTIS_ERROR[ERROR_EVENT_UNDECLARED] = 'Event "%1$s" has not yet been declared.';
+$MANTIS_ERROR[ERROR_PLUGIN_NOT_REGISTERED] = 'Plugin is not registered with MantisBT.';
+$MANTIS_ERROR[ERROR_PLUGIN_ALREADY_INSTALLED] = 'Plugin is already installed.';
+$MANTIS_ERROR[ERROR_PLUGIN_PAGE_NOT_FOUND] = 'Plugin page not found.';
+$MANTIS_ERROR[ERROR_PLUGIN_INSTALL_FAILED] = 'Plugin installation failed: %1$s.';
+$MANTIS_ERROR[ERROR_PLUGIN_UPGRADE_FAILED] = 'Upgrading the plugin schema failed in block #%1$s.';
+$MANTIS_ERROR[ERROR_PLUGIN_GENERIC] = 'There was an unknown error "%1$s" during execution of the "%2$s" plugin.';
+$MANTIS_ERROR[ERROR_COLUMNS_DUPLICATE] = 'Field "%1$s" contains duplicate column "%2$s".';
+$MANTIS_ERROR[ERROR_COLUMNS_INVALID] = 'Field "%1$s" contains invalid field "%2$s".';
+$MANTIS_ERROR[ERROR_SESSION_HANDLER_INVALID] = 'Invalid session handler.';
+$MANTIS_ERROR[ERROR_SESSION_VAR_NOT_FOUND] = 'Session variable "%1$s" not found.';
+$MANTIS_ERROR[ERROR_SESSION_NOT_VALID] = 'Your session has become invalidated.';
+$MANTIS_ERROR[ERROR_FORM_TOKEN_INVALID] = 'Jeton de s&eacute;curit&eacute; invalide. Soit votre session a expir&eacute;, soit vous avez accidentellement enregistr&eacute; le formulaire 2 fois.';
+$MANTIS_ERROR[ERROR_INVALID_REQUEST_METHOD] = 'This page cannot be accessed using this method.';
+$MANTIS_ERROR[ERROR_INVALID_SORT_FIELD] = 'Invalid sort field.';
+$MANTIS_ERROR[ERROR_INVALID_DATE_FORMAT] = 'Invalid date format.';
+$MANTIS_ERROR[ERROR_UPDATING_TIMEZONE] = 'Unable to update timezone.';
+
+$s_login_error = 'Les informations de connexions saisies sont incorrectes.';
+$s_login_cookies_disabled = 'Your browser either does not know how to handle cookies, or refuses to handle them.';
+
+# General Strings
+$s_go_back = 'Annuler';
+$s_proceed = 'Continuer';
+
+$s_switch = 'Switch';
+$s_logged_in_as = 'Mon profil';
+$s_accueillante = 'Accueillante';
+$s_nodossier = 'Dossier n&ordm;';
+
+$s_prefix_for_deleted_users = 'utilisateur';
+
+$s_administrator = 'Administrateur';
+$s_myself = 'moi';
+$s_default_access_level = 'Default access level';
+
+$s_issue_status_percentage = 'Issue Status Percentage';
+
+# Enum Strings
+$s_access_levels_enum_string = '10:viewer,25:reporter,40:updater,55:accueil,70:intervenante,90:gestionnaire';
+$s_project_status_enum_string = '10:development,30:release,50:stable,70:obsolete';
+$s_project_view_state_enum_string = '10:public,50:private';
+$s_view_state_enum_string = '10:public,50:private';
+
+$s_motif_nvvenue_enum_string = '0:N/A,20:violences conjugales,30:probl&egrave;mes au travail,40:demande d&apos;info acc&egrave;s aux droits,50:Dossier institutionnels,60:Recherches,70:Sympathisante-adh&eacute;rante,80:Autres violences,90:Autres probl&egrave;mes,100:Autre';
+$s_sexe_enum_string = '10:femme,20:homme';
+$s_type_contact_rep_enum_string =$s_type_contact_enum_string = '10:sur place,20:courrier,30:par t&eacute;l&eacute;phone';
+$s_status_enum_string = '10:accueil,20:dossier cr&eacute;&eacute;,50:dossier assign&eacute;,90:ferm&eacute;';
+#$s_status_enum_string = '10:accueil,20:dossier(*feedback),30:probleme(*acknowledged),40:besoin(*confirmed),50:reponse(*assigned),80:resolved,90:ferm&eacute;(*closed)';
+$s_resolution_enum_string = '10:ouvert,20:OK,30:re-ouvert,40:cas isol&eacute;,50:N/A,60:doublon,70:aucune action requise,80:Stand-by,90:Ignor&eacute;';
+$s_projection_enum_string = '10:none,30:tweak,50:minor fix,70:major rework,90:redesign';
+$s_eta_enum_string = '10:none,20:< 1 day,30:2-3 days,40:< 1 week,50:< 1 month,60:> 1 month';
+$s_sponsorship_enum_string = '0:Unpaid,1:Requested,2:Paid';
+
+# E-mail Strings
+$s_new_account_subject = 'Cr&eacute;ation de compte';
+$s_new_account_greeting = 'Thank you for registering. You have an account with username "%1$s". In order to complete your registration, visit the following URL (make sure it is entered as the single line) and set your own access password:';
+$s_new_account_greeting_admincreated = 'L&apos;utilisateur %1$s vous a créé un compte qui a pour identifiant "%2$s". Afin d&apos;activer votre compte, veuillez cliquer sur ce lien et renseigner votre mot de passe';
+$s_new_account_username = 'Identifiant:';
+$s_new_account_message = 'Si vous n&apos;avez pas demandé une création de compte, merci d&apos;ignorer ce message.';
+$s_new_account_do_not_reply = 'Message automatique.';
+$s_new_account_email = 'E-mail:';
+$s_new_account_IP = 'Remote IP address:';
+$s_new_account_signup_msg = 'The following account has been created:';
+
+$s_reset_request_msg = 'Someone (presumably you) requested a password change through e-mail verification. If this was not you, ignore this message and nothing will happen.
+
+If you requested this verification, visit the following URL to change your password:';
+$s_reset_request_in_progress_msg = 'If you supplied the correct username and e-mail address for your account, we will now have sent a confirmation message to that e-mail address. Once the message has been received, follow the instructions provided to change the password on your account.';
+
+$s_email_notification_title_for_status_bug_new = 'ce dossier a &eacute;t&eacute; cr&eacute;&eacute;';
+$s_email_notification_title_for_status_bug_feedback = 'ce dossier requires your FEEDBACK.';
+$s_email_notification_title_for_status_bug_acknowledged = 'ce dossier a &eacute;t&eacute; ACKNOWLEDGED.';
+$s_email_notification_title_for_status_bug_confirmed = 'ce dossier a &eacute;t&eacute; CONFIRMED.';
+$s_email_notification_title_for_status_bug_assigned = 'ce dossier a &eacute;t&eacute; ASSIGNED.';
+$s_email_notification_title_for_status_bug_resolved = 'ce dossier a &eacute;t&eacute; RESOLVED.';
+$s_email_notification_title_for_status_bug_closed = 'ce dossier a &eacute;t&eacute; CLOSED';
+
+$s_email_notification_title_for_action_bug_submitted = 'ce dossier a &eacute;t&eacute; SUBMITTED.';
+$s_email_notification_title_for_action_bug_assigned = 'ce dossier a &eacute;t&eacute; ASSIGNED.';
+$s_email_notification_title_for_action_bug_reopened = 'ce dossier a &eacute;t&eacute; REOPENED.';
+$s_email_notification_title_for_action_bug_deleted = 'ce dossier a &eacute;t&eacute; DELETED.';
+$s_email_notification_title_for_action_bug_updated = 'ce dossier a &eacute;t&eacute; UPDATED.';
+$s_email_notification_title_for_action_sponsorship_added = 'ce dossier a &eacute;t&eacute; SPONSORED.';
+$s_email_notification_title_for_action_sponsorship_updated = 'Le sponsor de ce dossier a &eacute;t&eacute; modifi&eacute;.';
+$s_email_notification_title_for_action_sponsorship_deleted = 'Le sponsor de ce dossier a &eacute;t&eacute; enlev&eacute;.';
+
+$s_email_notification_title_for_action_bugnote_submitted = 'A NOTE has been added to this issue.';
+$s_email_notification_title_for_action_duplicate_of_relationship_added = 'The following issue has been set as DUPLICATE OF issue %1$s.';
+$s_email_notification_title_for_action_has_duplicate_relationship_added = 'The issue %1$s has been set as DUPLICATE OF the following issue.';
+$s_email_notification_title_for_action_related_to_relationship_added = 'The following issue has been set as RELATED TO issue %1$s.';
+$s_email_notification_title_for_action_dependant_on_relationship_added = 'The following issue has been set PARENT OF issue %1$s.';
+$s_email_notification_title_for_action_blocks_relationship_added = 'The following issue has been set CHILD OF issue %1$s.';
+$s_email_notification_title_for_action_duplicate_of_relationship_deleted = 'The following issue has been UNset as DUPLICATE OF issue %1$s.';
+$s_email_notification_title_for_action_has_duplicate_relationship_deleted = 'The issue %1$s has been removed as a DUPLICATE OF the following issue.';
+$s_email_notification_title_for_action_related_to_relationship_deleted = 'The following issue has been marked as UNRELATED TO issue %1$s.';
+$s_email_notification_title_for_action_dependant_on_relationship_deleted = 'The following issue has been removed as the PARENT OF issue %1$s.';
+$s_email_notification_title_for_action_blocks_relationship_deleted = 'The following issue has been removed as the CHILD OF issue %1$s.';
+$s_email_notification_title_for_action_relationship_child_resolved = 'The RELATED issue %1$s has been RESOLVED.';
+$s_email_notification_title_for_action_relationship_child_closed = 'The RELATED issue %1$s has been CLOSED.';
+$s_email_notification_title_for_action_monitor = 'Issue %1$s is now monitored by user %2$s.';
+
+$s_email_reporter = 'Reported By';
+$s_email_handler = 'Intervenant social';
+$s_email_project = 'Project';
+$s_email_bug = 'Issue ID';
+$s_email_category = 'Category';
+$s_email_type_contact = 'type_contact';
+$s_email_sexe = 'sexe';
+$s_email_priorite = 'motif_contact';
+$s_email_status = 'Status';
+$s_email_resolution = 'Dossier r&eacute;solu?';
+$s_email_duplicate = 'Duplicate';
+$s_email_fixed_in_version = 'Fixed in Version';
+$s_email_target_version = 'Target Version';
+$s_email_date_submitted = 'Date Submitted';
+$s_email_last_modified = 'Last Modified';
+$s_email_summary = 'Summary';
+$s_email_description = 'Description';
+$s_email_date_nvvenue = 'Date de la nouvelle venue';
+$s_email_motif_nvvenue = 'Motif de la nouvelle venue';
+$s_rapporteur = 'Edit&eacute; par';
+
+# account_delete.php
+$s_account_protected_msg = 'Account protected. Cannot change settings...';
+$s_account_removed_msg = 'Your account has been removed...';
+
+# account_delete_page.php
+$s_confirm_delete_msg = 'Vous allez supprimer un compte. &Ecirc;tes-vous s&ucirc;r(e)?';
+$s_delete_account_button = 'Supprimer le compte';
+
+# account_page.php
+$s_manage_profiles_link = 'Profiles';
+$s_change_preferences_link = 'Preferences';
+$s_edit_account_title = 'Modifier compte';
+$s_username = 'Utilisateur';
+$s_realname = 'Nom';
+$s_email = 'E-mail';
+$s_password = 'Mot de passe';
+$s_no_password_change = 'The password is controlled by another system, hence cannot be edited here.';
+$s_confirm_password = 'Confirmer le mot de passe';
+$s_access_level = 'Niveau d&apos;acc&egrave;s';
+$s_update_user_button = 'Enregistrer';
+$s_verify_warning = 'Your account information has been verified. The account confirmation message you have received is now invalid.';
+$s_verify_change_password = 'You must set a password here to allow you to log in again.';
+
+# account_prefs_page.php
+$s_default_account_preferences_title = 'Account Preferences';
+$s_default_project = 'Default Project';
+$s_refresh_delay = 'Refresh Delay';
+$s_minutes = 'minutes';
+$s_redirect_delay = 'Redirect Delay';
+$s_seconds = 'seconds';
+$s_with_minimum_sexe = 'With Minimum sexe of';
+$s_bugnote_order = 'Notes Sort Order';
+$s_bugnote_order_asc = 'Ascending';
+$s_bugnote_order_desc = 'Descending';
+$s_email_on_new = 'E-mail on New';
+$s_email_on_assigned = 'E-mail on Change of Handler';
+$s_email_on_feedback = 'E-mail on Feedback';
+$s_email_on_resolved = 'E-mail on Resolved';
+$s_email_on_closed = 'E-mail on Closed';
+$s_email_on_reopened = 'E-mail on Reopened';
+$s_email_on_bugnote_added = 'E-mail on Note Added';
+$s_email_on_status_change = 'E-mail on Status Change';
+$s_email_on_motif_contact_change = 'E-mail on motif_contact Change';
+$s_email_bugnote_limit = 'E-mail Notes Limit';
+$s_language = 'Language';
+$s_update_prefs_button = 'Update Prefs';
+$s_reset_prefs_button = 'Reset Prefs';
+$s_timezone = 'Time Zone';
+
+# account_prefs_reset.php
+$s_prefs_reset_msg = 'Preferences have been reset...';
+
+# account_prefs_update.php
+$s_prefs_updated_msg = 'Preferences have been updated...';
+
+# account_profile_add.php
+$s_profile_added_msg = 'Profile added...';
+
+# account_profile_delete.php
+$s_profile_deleted_msg = 'Deleted profile...';
+
+# account_profile_edit_page.php
+$s_edit_profile_title = 'Edit Profile';
+$s_nom = 'Nom de naissance';
+$s_nomepouse = 'Nom d&apos;&eacute;pouse';
+$s_prenom = 'Pr&eacute;nom';
+$s_additional_description = 'Additional Description';
+$s_update_profile_button = 'Update Profile';
+
+# account_profile_make_default.php
+$s_profile_defaulted_msg = 'Default profile updated...';
+
+# account_profile_manage_page.php
+$s_add_profile_title = 'Add Profile';
+$s_add_profile_button = 'Add Profile';
+$s_edit_or_delete_profiles_title = 'Edit or Delete Profiles';
+$s_edit_profile = 'Edit Profile';
+$s_make_default = 'Make Default';
+$s_delete_profile = 'Delete Profile';
+$s_select_profile = 'Select Profile';
+$s_submit_button = 'Submit';
+
+# reponse
+$s_accompagn_enum_string = '0:N/A,1:&Eacute;coute (I),2:R&eacute;ponse &agrave; l&apos;accueil';
+$s_aide_soc_fin= 'Aide sociale et financi&egrave;re';
+$s_aide_alim = 'Aide alimentaire urgente/besoins de 1&deg; n&eacute;cessit&eacute;';
+$s_demarch = 'D&eacute;marches acc&egrave;s aux droits';
+$s_sante = 'Sant&eacute; physique et psychique';
+$s_assis_jur = 'Assistance juridique';
+$s_heberg = 'H&eacute;bergement';
+$s_aide_enf = 'Aide pour les enfants';
+$s_aide_prof = 'Aide sur le plan professionnel';
+$s_autre_demarch = 'Autres d&eacute;marches';
+$s_temps = 'Temps pass&eacute;';
+$s_rep_comm = 'Notes';
+
+$s_aide_soc_fin_enum_string = '6:Don caisse de solidarit&eacute; (I), 1:Aide expatriation, 2:Domiciliation courrier(I), 3:Contact avec les banques, 4:Contact associations,5:R&eacute;daction de courrier autre (I)';
+$s_aide_alim_enum_string = '5:le Fourneau, 1:Secours adventiste, 2:Secours catholique, 3:St-Vincent de Paul, 4:Boutique sociale Foyal';
+$s_demarch_enum_string = '5:assistante sociale, 1:CAF, 2:CGSS, 3:Pr&eacute;fecture, 4:Mairie, 6:ASSOKA, 7:accompagnement autre';
+$s_sante_enum_string = '7:M&eacute;decin ville, 1:Urgences, 2:Service psychotraumatisme, 3:CMP, 4:Psychologue/psychoth&eacute;rapeute, 5:Ateliers collectifs internes(I), 6:Ateliers collectifs externes';
+$s_assis_jur_enum_string = '8:Accompagnement &agrave; la gendarmerie/police, 1:Accompagnement tribunal(I), 2:Avocate r&eacute;seau UFM (I), 3:Aide &agrave; la constitution du dossier (I), 4:Notaire r&eacute;seau UFM (I), 5:Syndicats, 6:JAF, 7:Service d&apos;aide aux victimes, 9:Avocate r&eacute;seau UFM sur place';
+$s_heberg_enum_string = '4:Urgence (115), 1:Programm&eacute; (115), 2:Logement social, 3:Logement priv&eacute;';
+$s_aide_enf_enum_string = '2:Accompagnement psychologique, 1:Probl&egrave;mes scolaires';
+$s_aide_prof_enum_string = '3:Aide constitution d&apos;un dossier professionnel (I), 1:P&ocirc;le emploi, 2:Aide stage/formation/travail';
+$s_temps_enum_string = '0:aucun, 15:1/4h, 30:1/2h, 45:3/4h, 60:1h, 120:2h, 180:3h, 240:4h';
+
+# account_profile_update.php
+$s_profile_updated_msg = 'Profile updated...';
+
+# account_sponsor_page.php
+$s_my_sponsorship = 'My Sponsorships';
+$s_update_sponsorship_button = 'Change Payment Status';
+$s_no_sponsored = 'No sponsored issues Assigned To yourself were found.';
+$s_own_sponsored = 'Issues You have Sponsored:';
+$s_issues_handled = 'Sponsored Issues You Have Been Assigned To:';
+$s_no_own_sponsored = 'You have not sponsored any issues.';
+$s_sponsor = 'Sponsor'; # like in 'The sponsor of...'
+$s_sponsor_verb = 'Sponsor'; # like in 'Sponsor it!'
+$s_amount = 'Amount';
+$s_total_owing = 'Total Owing';
+$s_total_paid = 'Total Paid';
+$s_sponsor_hide = 'Hide Resolved and Paid';
+$s_sponsor_show = 'Show All';
+
+# account_sponsor_update.php
+$s_payment_updated = 'Payment information updated.';
+
+# account_update.php
+$s_account_updated_msg = 'Votre compte a &eacute;t&eacute; mis &agrave; jour...';
+$s_email_updated = 'Votre E-mail a &eacute;t&eacute; mis &agrave; jour';
+$s_realname_duplicated = 'Ce nom est d&eacute;j&agrave; utilis&eacute;';
+$s_realname_updated = 'Votre nom a &eacute;t&eacute; mis &agrave; jour';
+$s_password_updated = 'Votre mot de passe a &eacute;t&eacute; mis &agrave; jour';
+
+# adm_permission_report.php
+
+# bug_action_group_page
+$s_multiple_projects = 'The issues you have selected are from different projects. The parameters below reflect the settings for all projects. If this is incorrect, please retry your change with a smaller number of issues selected.';
+
+# bug_assign.php
+$s_bug_assign_msg = 'Dossier assign&eacute;...';
+
+# bug_change_status_page.php
+$s_new_bug_title = 'New Issue';
+$s_feedback_bug_title = 'Request Feedback on Issue';
+$s_acknowledged_bug_title = 'Acknowledge Issue';
+$s_confirmed_bug_title = 'Confirm Issue';
+$s_assigned_bug_title = 'Assign Issue';
+$s_new_bug_button = 'New Issue';
+$s_feedback_bug_button = 'Request Feedback';
+$s_acknowledged_bug_button = 'Acknowledge Issue';
+$s_confirmed_bug_button = 'Confirm Issue';
+$s_assigned_bug_button = 'Assign Issue';
+
+# bug_close.php
+$s_bug_close_msg = 'Issue has been closed...';
+$s_close_immediately = 'Close immediately:';
+
+# bug_close_page.php
+$s_closed_bug_title = 'Fermer un dossier';
+
+# bug_delete.php
+$s_bug_deleted_msg = 'Issue has been deleted...';
+
+# bug_delete_page.php
+$s_delete_bug_sure_msg = 'Are you sure you wish to delete this issue?';
+$s_delete_bug_button = 'Supprimer le dossier';
+
+# bug_monitor_add.php
+$s_monitor_bug_button = 'Ajouter demande de rappel';
+
+# bug_monitor_delete.php
+$s_unmonitor_bug_button = 'Annuler demande de rappel';
+
+# bug_file_add.php
+$s_file_upload_msg = 'File upload successful.';
+
+# bug_file_upload_inc.php
+$s_upload_file = 'Stocker une pi&egrave;ce jointe';
+$s_upload_files = 'Stocker plusieurs pi&egrave;ces jointes';
+$s_select_file = 'S&eacute;lectionner le fichier';
+$s_select_files = 'S&eacute;lectionner les fichiers';
+$s_upload_file_button = 'Stocker une pi&egrave;ce jointe';
+$s_upload_files_button = 'Stocker plusieurs pi&egrave;ces jointes';
+$s_max_file_size = 'Taille maximum';
+
+# bug_reopen.php
+$s_bug_reopened_msg = 'Issue has been reopened...';
+$s_reopen_add_bugnote_title = 'Add Note Reason For Reopening Issue';
+$s_bugnote_add_reopen_button = 'Add Note and Reopen Issue';
+
+# bug_resolve_page.php
+$s_resolved_bug_title = 'Resolve Issue';
+$s_resolved_bug_button = 'Resolve Issue';
+
+# bug_resolve_page2.php
+$s_bug_resolved_msg = 'Issue has been resolved. Enter note below...';
+$s_resolve_add_bugnote_title = 'Add Note Reason For Resolving Issue';
+$s_bugnote_add_resolve_button = 'Add Note';
+
+# bug_reminder_page.php
+$s_from = 'De';
+$s_to = '&Agrave;';
+$s_sent_you_this_reminder_about = 'vous a envoyé une demande de rappel  au sujet de';
+$s_bug_reminder = 'Envoyer une demande de rappel';
+$s_reminder_sent_to = 'Demande de rappel envoy&eacute;e &agrave;';
+$s_reminder_sent_none = 'Echec de l&apos;envoi de la demande de rappel.';
+$s_reminder_list_truncated = 'Liste de destinataires tronqu&eacute;e';
+$s_bug_send_button = 'Envoyer';
+$s_reminder = 'Demande de rappel';
+$s_reminder_explain = 'Cette demande de rappel sera envoy&eacute;e aux destinataires s&eacute;lectionn&eacute;s.';
+$s_reminder_monitor = 'Ils seront alert&eacute;s des &eacute;volutions de ce dossier.';
+$s_reminder_store = 'Votre message sera stock&eacute; dans le dossier.';
+
+# bug_set_sponsorship.php
+$s_confirm_sponsorship = 'Please confirm you want to sponsor issue %1$d for %2$s.';
+
+# bug_stick.php
+$s_stick_bug_button = 'Stick';
+$s_unstick_bug_button = 'Unstick';
+
+# bug_update.php
+$s_bug_updated_msg = 'Issue has been successfully updated...';
+
+# bug_update_advanced_page.php
+$s_back_to_bug_link = 'Annuler';
+$s_update_simple_link = 'Update Simple';
+$s_updating_bug_advanced_title = 'Modifier Accueil';
+$s_id = 'N&ordm; dossier';
+$s_category = 'Categorie';
+$s_sexe = 'Sexe';
+$s_type_contact_rep =$s_type_contact = 'Type de contact';
+$s_date_submitted = 'Date de cr&eacute;ation';
+$s_date_rep = 'Date de la r&eacute;ponse';
+$s_last_updated =$s_last_update = 'Derni&egrave;re mise &agrave; jour';
+$s_reporter_id =$s_reporter = 'Accueillante';
+$s_assigned_to = 'Intervenant';
+$s_accompagn = 'Accompagnement';
+$s_motif_contact = 'Motif contact';
+$s_resolution = 'R&eacute;solution';
+$s_status = '&Eacute;tape';
+$s_duplicate_id = 'Duplicate ID';
+$s_prenom = 'Pr&eacute;nom';
+$s_projection = 'Projection';
+$s_telephone = 'T&eacute;l&eacute;phone mobile';
+$s_eta = 'ETA';
+$s_product_version = 'Product Version';
+$s_build = 'Build';
+$s_fixed_in_version = 'Fixed in Version';
+$s_target_version = 'Target Version';
+$s_votes = 'Votes';
+$s_summary = 'Summary';
+$s_description = 'Notes';
+$s_motif_nvvenue = 'Motif de la nouvelle venue';
+$s_update_information_button = 'Enregistrer';
+$s_sticky_issue = 'Sticky Issue';
+$s_profile = 'Profile';
+
+# bug_update_page.php
+$s_updating_bug_simple_title = 'Updating Issue Information';
+
+# bug_view*
+$s_view_revisions = 'View Revisions';
+$s_revision = 'Revision';
+$s_revision_by = '%1$s by %2$s';
+$s_revision_drop = 'Drop';
+$s_bug_revision_dropped_history = 'Bug Revision Dropped';
+$s_bugnote_revision_dropped_history = 'Note Revision Dropped';
+$s_all_revisions = 'All Revisions';
+$s_back_to_issue = 'Back to Issue';
+$s_confirm_revision_drop = 'Are you sure you want to drop this issue revision?';
+
+# bug_vote_add.php
+$s_vote_added_msg = 'Vote has been added...';
+
+# bugnote_add.php
+$s_bugnote_added_msg = 'Note added...';
+
+# bugnote_delete.php
+$s_bugnote_deleted_msg = 'Note has been successfully deleted...';
+$s_note_general = $s_note_general_enum_string = 'Notes';
+
+# bugnote_edit_page.php
+$s_edit_bugnote_title = 'Modifier le Probl&egrave;me';
+
+# bugnote_inc.php
+$s_no_bugnotes_msg = 'Aucun probl&egrave;me renseign&eacute; pour ce dossier.';
+$s_delete_link = 'Supprimer';
+$s_bug_notes_title = 'Probl&egrave;me';
+$s_bug_notes_title = $s_add_bugnote_title = '+ Ajouter un probl&egrave;me';
+$s_new_reponse = '+ Ajouter une r&eacute;ponse';
+$s_add_bugnote_button = 'Enregistrer';
+$s_bugnote_edit_link = 'Modifier';
+$s_closed_bug_button = 'Fermer';
+
+# bugnote_update.php
+$s_bugnote_updated_msg = 'Note has been successfully updated...';
+$s_edited_on = 'Rapport&eacute; le ';
+
+# file_api.php
+$s_hide_content = 'Cacher le contenu';
+$s_show_content = 'Aper&ccedil;u';
+
+# html_api.php
+$s_total_queries_executed = '%1$d total queries executed.';
+$s_unique_queries_executed = '%1$d unique queries executed.';
+$s_memory_usage_in_kb = 'memory usage: %1$s KB';
+
+# print_api.php
+$s_please_report = 'Please report this to the %1$s.';
+
+# index.php
+$s_click_to_login = 'Se connecter';
+
+# login.php
+$s_warning_plain_password_authentication = '<strong>Warning:</strong> Plain password authentication is used, this will expose your passwords to administrators.';
+$s_warning_default_administrator_account_present = '<strong>Warning:</strong> You should disable the default \'administrator\' account or change its password.';
+$s_warning_admin_directory_present = '<strong>Warning:</strong> Admin directory should be removed.';
+$s_error_database_version_out_of_date_1 = '<strong>Error:</strong> The database structure appears to be out of date (config(databaseversion) is 0 and old upgrade tables exist). Version 1.x of MantisBT introduced a new upgrade process. You appear to be upgrading from a 0.XX Release. Please upgrade to 1.0.8 or 1.1.X, then upgrade to 1.2.';
+$s_error_database_no_schema_version = '<strong>Error:</strong> The database structure appears to be out of date (config(databaseversion) is 0 and old upgrade tables do not exist). Please check that your database is running - we can not retrieve the database schema version. Config Table did not return a valid database schema version - please ask for support on the mantis-help mailing list if required.';
+$s_error_database_version_out_of_date_2 = '<strong>Warning:</strong> The database structure may be out of date. Please upgrade <a href="admin/install.php">here</a> before logging in.';
+$s_error_code_version_out_of_date = '<strong>Warning:</strong> The database structure is more up-to-date than the code installed. Please upgrade the code.';
+
+# login_page.php
+#@@@ should the following string be related to $g_window_title?
+$s_login_page_info = 'Welcome to the Issue Tracker.';
+$s_login_title = 'Connexion UFM';
+$s_save_login = 'Garder en m&eacute;moire';
+$s_secure_session = 'Connexion s&eacute;curis&eacute;e';
+$s_secure_session_long = 'Restreindre cette connexion &agrave; cette adresse IP.';
+$s_choose_project = 'Choose Project';
+$s_login_button = 'Se connecter';
+$s_signup_link = 'Cr&eacute;er un nouveau compte';
+$s_lost_password_link = 'Mot de passe oubli&eacute;?';
+
+# login_select_proj_page.php
+$s_select_project_button = 'Select Project';
+
+# lost_pwd_page.php
+$s_lost_password_title = 'Password Reset';
+$s_lost_password_done_title = 'Password Message Sent';
+$s_lost_password_subject = 'Password Reset';
+$s_lost_password_info = 'To reinstate your lost password, please supply the name and e-mail address for the account.<br /><br />If the data corresponds to a valid account, you will be sent a special URL via e-mail that contains a validation code for your account. Please follow this link to change your password.';
+$s_lost_password_confirm_hash_OK = 'Your confirmation has been accepted. Please update your password.';
+
+# main_page.php
+$s_open_and_assigned_to_me = 'Open and assigned to me';
+$s_open_and_reported_to_me = 'Open and reported by me';
+$s_newer_news_link = 'Newer News';
+$s_older_news_link = 'Older News';
+$s_archives = 'Archives';
+$s_rss = 'RSS';
+
+# manage_overview_page
+$s_site_information = 'Site Information';
+$s_mantis_version = 'Site Version';
+$s_schema_version = 'Schema Version';
+$s_site_path = 'Site Path';
+$s_core_path = 'Core Path';
+$s_plugin_path = 'Plugin Path';
+
+# manage_create_new_user.php
+$s_created_user_part1 = 'Utilisateur ';
+$s_created_user_part2 = 'cr&eacute;&eacute; avec un niveau d&apos;acc&egrave;s';
+
+# manage_create_user_page.php
+$s_create_new_account_title = 'Create New Account';
+$s_verify_password = 'Verify Password';
+$s_enabled = 'Actif';
+$s_protected = 'Prot&eacute;g&eacute;';
+$s_create_user_button = 'Cr&eacute;er l&apos;utilisatrice';
+
+# manage_page.php
+$s_hide_disabled = 'Hide Disabled';
+$s_filter_button = 'Valider';
+$s_default_filter = 'Default Filter';
+$s_create_filter_link = 'Create Permalink'; # Permalink = Permanent Link
+$s_create_short_link = 'Create Short Link';
+$s_filter_permalink = 'Following is a permanent link to the currently configured filter:';
+$s_manage_users_link = 'Gestion des utilisateurs';
+$s_manage_projects_link = 'Manage Projects';
+$s_manage_custom_field_link = 'Manage Custom Fields';
+$s_manage_global_profiles_link = 'Manage Global Profiles';
+$s_manage_plugin_link = 'Manage Plugins';
+$s_permissions_summary_report = 'Permissions Report';
+$s_manage_config_link = 'Manage Configuration';
+$s_manage_threshold_config = 'Workflow Thresholds';
+$s_manage_email_config = 'E-mail Notifications';
+$s_manage_workflow_config = 'Workflow Transitions';
+$s_manage_tags_link = 'Manage Tags';
+$s_create_new_account_link = 'Cr&eacute;er un compte';
+$s_projects_link = 'Projects';
+$s_documentation_link = 'Documentation';
+$s_new_accounts_title = 'New Accounts';
+$s_1_week_title = '';
+$s_never_logged_in_title = 'Jamais connect&eacute;';
+$s_prune_accounts = 'Prune Accounts';
+$s_hide_inactive = 'Masquer comptes inactifs';
+$s_show_disabled = 'Voir comptes d&eacute;sactiv&eacute;s';
+$s_manage_accounts_title = 'Gestion des comptes';
+$s_p = 'p';
+$s_date_created = 'Date de cr&eacute;ation';
+$s_last_visit = 'Derni&egrave;re connexion';
+$s_edit_user_link = 'Modifier utilisateur';
+
+# manage_config_email_page
+$s_config_all_projects = 'Note: These configurations affect all projects, unless overridden at the project level.';
+$s_config_project = 'Note: These configurations affect only the %1$s project.';
+$s_colour_coding = 'In the table below, the following color code applies:';
+$s_colour_project = 'Project setting overrides others.';
+$s_colour_global = 'All Project settings override default configuration.';
+$s_issue_reporter = 'User who reported issue';
+$s_issue_handler = 'User who is handling the issue';
+$s_users_added_bugnote = 'Users who added Issue Notes';
+$s_change_configuration = 'Update Configuration';
+$s_message = 'Message';
+$s_default_notify = 'Setting default notification flags to';
+$s_action_notify = 'Setting action notification flags to';
+$s_notify_defaults_change_access = 'Who can change notification defaults';
+$s_notify_actions_change_access = 'Who can change notifications:';
+$s_revert_to_system = 'Delete All Projects Settings';
+$s_revert_to_all_project = 'Delete Project Specific Settings';
+
+# manage_config_workflow_page
+$s_non_existent = 'non-existent';
+$s_current_status = 'Current Status';
+$s_next_status = 'Next Status';
+$s_workflow = 'Workflow';
+$s_workflow_thresholds = 'Thresholds that Affect Workflow';
+$s_threshold = 'Threshold';
+$s_status_level = 'Status';
+$s_alter_level = 'Who can alter this value';
+$s_validation = 'Workflow Validation';
+$s_comment = 'Validation Comment';
+$s_superfluous = 'Arc from status to itself is implied, and need not be given explicitly';
+$s_unreachable = 'You cannot move an issue into this status';
+$s_no_exit = 'You cannot move an issue out of this status';
+$s_access_levels = 'Access Levels';
+$s_access_change = 'Minimum Access Level to Change to this Status';
+$s_desc_bug_submit_status = 'Status to which a new issue is set';
+$s_desc_bug_reopen_status = 'Status to which reopened issues are set';
+$s_desc_bug_resolved_status_threshold = 'Status where an issue is considered resolved';
+$s_desc_bug_closed_status_threshold = 'Status where an issue is considered closed';
+$s_workflow_change_access = 'Who can change workflow';
+$s_access_change_access = 'Who can change access levels';
+
+# manage_config_workflow_set
+$s_default_not_in_flow = 'The default status of %1$s is not selected in the next statuses for %2$s. It will be ignored.';
+
+# manage_config_work_threshold_page
+$s_assign_issue = 'Assign an issue';
+$s_allow_close_immediate = 'Allow issue to be closed on Resolve';
+$s_allow_reporter_close = 'Allow Reporter to close Issue';
+$s_allow_reporter_reopen = 'Allow Reporter to re-open Issue';
+$s_set_status_assigned = 'Set status on assignment of Handler';
+$s_allow_user_edit = 'Allow user to edit their own issue notes';
+$s_limit_access = 'Limit reporter\'s access to their own issues';
+$s_submit_status = 'Status to which a new issue is set';
+$s_assigned_status = 'Status to set auto-assigned issues to';
+$s_resolved_status = 'Status where an issue is considered resolved';
+$s_readonly_status = 'Status where an issue becomes read only';
+$s_reopen_status = 'Status to which a reopened issue is set';
+$s_reopen_resolution = 'Resolution to which a reopened issue is set';
+
+# manage_config_revert_page
+$s_config_delete_sure = 'Are you sure you want to delete the settings for:';
+$s_in_project = 'in project';
+$s_delete_config_button = 'Delete Settings';
+
+# adm_config_report.php
+$s_configuration_report = 'Configuration Report';
+$s_database_configuration = 'Database Configuration';
+$s_configuration_option = 'Configuration Option';
+$s_configuration_option_type = 'Type';
+$s_configuration_option_value = 'Value';
+$s_all_users = 'All Users';
+$s_set_configuration_option = 'Set Configuration Option';
+$s_delete_config_sure_msg = 'Are you sure you wish to delete this configuration option?';
+$s_configuration_corrupted = 'The configuration in the database is corrupted.';
+
+# manage_plugin_page.php
+$s_plugin = 'Plugin';
+$s_plugins_installed = 'Installed Plugins';
+$s_plugins_available = 'Available Plugins';
+$s_plugin_description = 'Description';
+$s_plugin_author = 'Author: %1$s';
+$s_plugin_url = 'Website:';
+$s_plugin_depends = 'Dependencies';
+$s_plugin_no_depends = 'No dependencies';
+$s_plugin_priorite = 'priorite plugin';
+$s_plugin_protected = 'Protected';
+$s_plugin_update = 'Update';
+$s_plugin_actions = 'Actions';
+$s_plugin_install = 'Install';
+$s_plugin_upgrade = 'Upgrade';
+$s_plugin_uninstall = 'Uninstall';
+$s_plugin_uninstall_message = 'Are you sure you want to uninstall the "%1$s" plugin?';
+$s_plugin_key = 'Key';
+$s_plugin_key_met = 'plugin ready';
+$s_plugin_key_unmet = 'unmet dependencies';
+$s_plugin_key_dated = 'outdated dependencies';
+$s_plugin_key_upgrade = 'upgrade needed';
+
+# manage_proj_add.php
+$s_project_added_msg = 'Project has been successfully added...';
+
+# manage_proj_category_add.php
+$s_category_added_msg = 'Category has been successfully added...';
+
+# manage_proj_category_delete.php
+$s_category_deleted_msg = 'Category has been successfully deleted...';
+
+# manage_proj_category_delete_page.php
+$s_category_delete_sure_msg = 'Are you sure you want to delete this category?<br />Category "%1$s" contains %2$d issues.';
+$s_delete_category_button = 'Delete Category';
+
+# manage_proj_category_edit_page.php
+$s_edit_project_category_title = 'Edit Project Category';
+$s_update_category_button = 'Update Category';
+
+# manage_proj_category_update.php
+$s_category_updated_msg = 'Category has been successfully updated...';
+
+# manage_proj_create_page.php
+$s_add_subproject_title = 'Add Subproject';
+
+# manage_proj_delete.php
+$s_project_deleted_msg = 'Project successfully removed...';
+
+# manage_proj_delete_page.php
+$s_project_delete_msg = 'Are you sure you want to delete this project and all attached issue reports?';
+$s_project_delete_button = 'Delete Project';
+
+# manage_proj_edit_page.php
+$s_edit_project_title = 'Edit Project';
+$s_project_name = 'Project Name';
+$s_view_status = 'View Status';
+$s_public = 'public';
+$s_private = 'private';
+$s_update_project_button = 'Update Project';
+$s_delete_project_button = 'Delete Project';
+$s_copy_from = 'Copy From';
+$s_copy_to = 'Copy To';
+$s_categories_and_version_title = 'Categories and Versions';
+$s_categories = 'Categories';
+$s_add_category_button = 'Add Category';
+$s_versions = 'Versions';
+$s_add_version_button = 'Add Version';
+$s_add_and_edit_version_button = 'Add and Edit Version';
+$s_edit_link = 'Modifier';
+$s_actions = 'Actions';
+$s_version = 'Version';
+$s_timestamp = 'Timestamp';
+$s_update = 'Update';
+$s_subprojects = 'Subprojects';
+$s_add_subproject = 'Add as Subproject';
+$s_create_new_subproject_link = 'Create New Subproject';
+$s_unlink_link = 'Unlink';
+$s_show_global_users = 'Show Users with Global Access';
+$s_hide_global_users = 'Hide Users with Global Access';
+
+# manage_proj_menu_page.php
+$s_add_project_title = 'Add Project';
+$s_upload_file_path = 'Upload File Path';
+$s_add_project_button = 'Add Project';
+$s_projects_title = 'Projects';
+$s_name = 'Name';
+
+# manage_proj_update.php
+$s_project_updated_msg = 'Project has been successfully updated...';
+
+# manage_proj_version_add.php
+$s_version_added_msg = 'Version has been successfully added...';
+
+# manage_proj_version_delete.php
+$s_version_deleted_msg = 'Version has been successfully deleted...';
+
+# manage_proj_version_delete_page.php
+$s_version_delete_sure = 'Are you sure you want to delete this version?';
+$s_delete_version_button = 'Delete Version';
+
+# manage_proj_version_edit_page.php
+$s_edit_project_version_title = 'Edit Project Version';
+$s_update_version_button = 'Update Version';
+$s_released = 'Released';
+$s_not_released = 'Not Yet Released';
+$s_scheduled_release = 'Scheduled For Release';
+$s_obsolete = 'Obsolete';
+
+# manage_proj_version_update.php
+$s_version_updated_msg = 'Version has been successfully updated...';
+
+# manage_user_delete.php
+$s_account_delete_protected_msg = 'Account protected. Cannot delete this account.';
+$s_account_deleted_msg = 'Account deleted...';
+
+# manage_user_delete_page.php
+$s_delete_account_sure_msg = 'Vous allez supprimer un compte. &Ecirc;tes-vous s&ucirc;r(e)?';
+
+# manage_user_edit_page.php
+$s_notify_user = 'Notifier l&apos;utilisatrice';
+
+# manage_user_prune.php
+$s_accounts_pruned_msg = 'All accounts that have never logged in and are older than 1 week have been removed';
+$s_prune_accounts_button = 'Prune';
+$s_confirm_account_pruning = 'Are you sure you want to delete old accounts that have never logged in?';
+
+# manage_user_page.php
+$s_edit_user_title = 'Modifier infos de l&apos;utilisatrice';
+$s_account_unlock_button = 'D&eacute;bloquer compte';
+$s_reset_password_button = 'Reset mot de passe';
+$s_delete_user_button = 'Supprimer l&apos;utilisatrice';
+$s_reset_password_msg = 'Reset Password sends the confirmation URL via e-mail.';
+$s_reset_password_msg2 = 'Reset Password resets the password to be blank.';
+$s_show_all_users = 'All';
+$s_users_unused = 'Non-utilis&eacute;';
+$s_users_new = 'Nouveaux';
+
+# manage_user_reset.php
+$s_account_reset_protected_msg = 'Account protected. Cannot reset the password.';
+$s_account_reset_msg = 'A confirmation request has been sent to the selected user\'s e-mail address. Using this, the user will be able to change their password.';
+$s_account_reset_msg2 = 'Account password has been set to blank...';
+$s_account_unlock_msg = 'The account has been unlocked.';
+
+# manage_user_update.php
+$s_manage_user_protected_msg = 'Account protected; the \'Access Level\' and \'Enabled\' fields cannot be modified. Other fields were successfully updated.';
+$s_manage_user_updated_msg = 'Account successfully updated...';
+$s_email_user_updated_subject = 'Account updated';
+$s_email_user_updated_msg = 'Your account has been updated by an administrator. A list of these changes is provided below. You can update your account details and preferences at any time by visiting the following URL:';
+
+# menu_inc.php
+$s_main_link = 'Main';
+$s_view_bugs_link = 'Rechercher';
+$s_report_bug_link = 'Cr&eacute;er fiche';
+$s_changelog_link = 'Change Log';
+$s_roadmap_link = 'Roadmap';
+$s_summary_link = 'Statistiques';
+$s_account_link = 'Mon compte';
+$s_users_link = 'Utilisateurs';
+$s_manage_link = 'Administration';
+$s_edit_news_link = 'Edit News';
+$s_docs_link = 'Docs';
+$s_logout_link = 'D&eacute;connexion';
+$s_my_view_link = 'Accueil';
+
+# meta_inc.php
+
+# my_view_page.php
+$s_my_view_title_unassigned = 'non assign&eacute;';
+$s_my_view_title_recent_mod = 'Dossiers modifi&eacute;s r&eacute;cemment';
+$s_my_view_title_reported = 'Reported by Me';
+$s_my_view_title_assigned = 'Mes dossiers';
+$s_my_view_title_resolved = 'Resolved';
+$s_my_view_title_monitored = '&Agrave; rappeler';
+$s_my_view_title_feedback = 'Awaiting Feedback from Me';
+$s_my_view_title_verify = 'Awaiting Confirmation of Resolution from Me';
+$s_my_view_title_my_comments = 'Issues I Have Commented On';
+
+# news_add.php
+$s_news_added_msg = 'News item added...';
+
+# news_delete.php
+$s_news_deleted_msg = 'Deleted news item...';
+
+# news_delete_page.php
+$s_delete_news_sure_msg = 'Are you sure you wish to delete this news item?';
+$s_delete_news_item_button = 'Delete News Item';
+
+# news_edit_page.php
+$s_edit_news_title = 'Edit News';
+$s_headline = 'Headline';
+$s_body = 'Body';
+$s_update_news_button = 'Update News';
+
+# news_menu_page.php
+$s_add_news_title = 'Add News';
+$s_post_to = 'Post to';
+$s_post_news_button = 'Post News';
+$s_edit_or_delete_news_title = 'Edit or Delete News';
+$s_edit_post = 'Edit Post';
+$s_delete_post = 'Delete Post';
+$s_select_post = 'Select Post';
+
+# news_update.php
+$s_news_updated_msg = 'News item updated...';
+
+# news_view_page.php
+$s_back_link = 'Back';
+
+# proj_doc_add.php
+$s_file_uploaded_msg = 'File upload successful.';
+
+# proj_doc_add_page.php
+$s_upload_file_title = 'Upload File';
+$s_title = 'Title';
+
+# proj_doc_delete.php
+$s_project_file_deleted_msg = 'Project file deleted.';
+
+# proj_doc_delete_page.php
+$s_confirm_file_delete_msg = 'Are you sure you wish to delete this file?';
+
+# proj_doc_edit_page.php
+$s_filename = 'Filename';
+$s_file_update_button = 'Update File';
+$s_file_delete_button = 'Delete File';
+
+# proj_doc_page.php
+$s_project_documentation_title = 'Project Documentation';
+$s_user_documentation = 'User Documentation';
+$s_project_documentation = 'Project Documentation';
+$s_add_file = 'Add File';
+
+# proj_doc_update.php
+$s_project_document_updated = 'Project update successful.';
+
+# proj_user_add.php
+$s_project_user_added_msg = 'Successfully added user to project.';
+
+# proj_user_delete.php
+$s_project_removed_user_msg = 'Successfully removed user from project.';
+
+# manage_user_proj_delete.php
+$s_remove_user_sure_msg = 'Are you sure you wish to remove this user?';
+$s_remove_user_from_project_button = 'Remove User from Project %s';
+$s_remove_all_users_sure_msg = 'Are you sure you wish to remove all the users of this project?';
+$s_remove_all_users_button = 'Remove All Users';
+
+# proj_user_menu_page.php
+$s_add_user_title = 'Add user to project';
+$s_add_user_button = 'Add User';
+$s_project_selection_title = 'Project Selection';
+$s_remove_link = 'Remove';
+$s_remove_all_link = 'Remove all';
+
+# proj_user_update.php
+$s_updated_user_msg = 'Successfully updated user.';
+
+# report_add.php
+$s_must_enter_category = 'You must select a category.';
+$s_must_enter_sexe = 'You must select a sexe.';
+$s_must_enter_type_contact = 'You must select a type_contact.';
+$s_must_enter_summary = 'You must enter a summary.';
+$s_must_enter_description = 'You must enter a description.';
+$s_report_more_bugs = 'Report More Issues';
+$s_submission_thanks_msg = 'Thank you for your submission.';
+
+# report_bug_advanced_page.php
+$s_simple_report_link = 'Simple Report';
+$s_enter_report_details_title = 'Accueil';
+$s_required = 'Champ obligatoire';
+$s_select_category = 'Select Category';
+$s_select_type_contact = 'Select type_contact';
+$s_select_sexe = 'Select sexe';
+$s_or_fill_in = 'Or Fill In';
+$s_handler = $s_handler_id = $s_assign_to = 'Intervenant social';
+$s_date_nvvenue = 'Date nouvelle venue';
+$s_submit_report_button = 'Enregistrer';
+$s_check_report_more_bugs = 'check to report more issues';
+
+# report_bug_page.php
+$s_report_stay = 'Report Stay';
+
+# set_project.php
+$s_selected_project = 'Selected project';
+$s_valid_project_msg = 'You must choose a valid project.';
+
+# signup.php
+$s_signup_done_title = 'Account registration processed.';
+$s_password_emailed_msg = 'F&eacute;liciations! Votre compte a bien &eacute;t&eacute; cr&eacute;&eacute;. Vous allez recevoir un mail de confirmation. Veuillez ouvrir cet emaile et cliquer sur le lien qu&apos;il contient afin d&apos;activer votre compte.';
+$s_no_reponse_msg = 'You will have seven days to complete the account confirmation process; if you fail to complete account confirmation within seven days, this newly-registered account may be purged.';
+
+# signup_page.php
+$s_signup_captcha_request = 'Enter the code as it is shown in the box on the right.';
+$s_signup_info = 'On completion of this form and verification of your answers, you will be sent a confirmation e-mail to the e-mail address you specified.<br />Using the confirmation e-mail, you will be able to activate your account. If you fail to activate your account within seven days, it will be purged.<br />You must specify a valid e-mail address in order to receive the account confirmation e-mail.';
+$s_signup_title = 'Signup';
+$s_signup_button = 'Signup';
+$s_no_password_request = 'Your password is managed by another system. Please contact your system administrator.';
+
+# site_settings_edit_page.php
+$s_edit_site_settings_title = 'Edit Site Settings';
+$s_save_settings_button = 'Save Settings';
+
+# site_settings_page.php
+$s_site_settings_title = 'Site Settings';
+$s_system_info_link = 'System Info';
+$s_site_settings_link = 'Site Settings';
+
+# site_settings_update.php
+$s_site_settings_updated_msg = 'Site settings have been updated';
+
+# summary_page.php
+$s_summary_title = 'Statistiques';
+$s_summary_advanced_link = 'Advanced summary';
+$s_by_project = 'By Project';
+$s_by_status = 'Par &eacute;tape';
+$s_by_date = 'Par dur&eacute;e (jour)';
+$s_by_sexe = 'Par sexe';
+$s_by_resolution = 'Par Avancement';
+$s_by_category = 'Par Categorie';
+$s_by_motif_contact = 'Par motif de contact';
+$s_by_developer = 'Par intervenant';
+$s_by_reporter = 'By Reporter';
+$s_reporter_by_resolution = 'Reporter By Resolution';
+$s_reporter_effectiveness = 'Reporter Effectiveness';
+$s_developer_by_resolution = 'Developer By Resolution';
+$s_percentage_fixed = '% Fixed';
+$s_percentage_errors = '% False';
+$s_errors = 'False';
+$s_opened = 'Ouvert';
+$s_resolved = 'R&eacute;solu';
+$s_total = 'Total';
+$s_balance = 'Balance';
+$s_most_active = 'Nombre de modifs';
+$s_score = 'Score';
+$s_days = 'Jours';
+$s_time_stats = 'Temps de r&eacute;solution (en jours)';
+$s_longest_open_bug = 'Longest open issue';
+$s_longest_open = 'Dur&eacute;e';
+$s_average_time = 'Average time';
+$s_total_time = 'Total time';
+$s_developer_stats = 'Stats de l&apos;intervenant';
+$s_reporter_stats = 'Stats de l&apos;accueillant';
+$s_orct = '(ouvert/r&eacute;solu/ferm&eacute;/total)';
+
+# nouveaux champs
+$s_demande_rappel = 'Demande de rappel';
+$s_attente = 'Attente';
+$s_date_naissance = 'Date de naissance (JJ/MM/AAAA)';
+$s_lieu_naissance = 'Lieu de naissance';
+$s_nationalite = 'Nationalit&eacute;';
+$s_adresse = 'Adresse';
+$s_rue = 'Rue, voie, chemin';
+$s_adrs_suite = '...suite';
+$s_ville = 'Ville';
+$s_region = 'R&eacute;gion ou D&eacute;partement';
+$s_code_postal = 'Code postal';
+$s_pays = 'Pays';
+$s_autre_hebergt = 'Autre h&eacute;bergement';
+$s_email = 'E-mail';
+$s_tel_domicile = 'T&eacute;l&eacute;phone domicile';
+$s_tel_travail = 'T&eacute;l&eacute;phone travail';
+$s_orig_orient = 'Origine de l&apos;orientation';
+$s_connu_assoc = 'Comment avez-vous connu l&apos;association?';
+$s_nom_logem = '&Agrave; quel nom est le logement?';
+$s_type_logem = 'Type de logement';
+$s_complem_info = 'Compl&eacute;ment d&apos;information';
+$s_matrim_ant = 'Ant&eacute;rieure';
+$s_matrim = 'Actuelle';
+$s_nb_enfant = 'Nombre d&apos;enfants';
+$s_nb_enf_charge = 'Nombre d&apos;enfants &agrave; charge';
+$s_sxage_enf = 'Sexe et &acirc;ge des enfants';
+$s_enf_pere = 'Les enfants sont-ils du m&ecirc;me p&egrave;re?';
+$s_enf_recon = 'Combien d&apos;enfants sont reconnus par leur(s) p&egrave;re(s)?';
+$s_sit_prof = 'Situation professionnelle';
+$s_niv_scolr = 'Niveau scolaire';
+$s_emploi = 'Emploi occup&eacute;';
+$s_cddcdi = 'Dur&eacute;e du contrat';
+$s_typ_contrat = 'Type de contrat';
+$s_secteur_activ = 'Secteur d&apos;activit&eacute;';
+$s_type_ent = 'Type d&apos;entreprise';
+$s_csp = 'Cat&eacute;gorie';
+$s_ressources = 'Montant des ressources';
+$s_prestations = 'Prestations sociales';
+$s_mere_victime= 'Violence conjugale: sa m&egrave;re a-t-elle &eacute;t&eacute; victime?';
+$s_plaintes = 'D&eacute;j&agrave; port&eacute; plainte (police)?';
+$s_nb_plaintes= 'Si oui, nombre de fois';
+$s_nb_plaintesko= 'nombre de plaintes refus&eacute;es';
+$s_plaintes_gend= 'D&eacute;j&agrave; port&eacute; plainte (gendarmerie)?';
+$s_nb_plaintesgend= 'Si oui, nombre de fois';
+$s_nb_plainteskogend= 'nombre de plaintes refus&eacute;es';
+$s_maincour= 'D&eacute;j&agrave; fait des mains courantes ?';
+$s_nb_maincour= 'Si oui, nombre de fois';
+$s_suite_plaintes= 'Suite donn&eacute;e aux plaintes et mains courantes';
+$s_deja_vict= 'Dans ses relations ant&eacute;rieures, a-t-elle &eacute;t&eacute; victime de violences?';
+$s_vict_enfce= 'A-t-elle &eacute;t&eacute; victime de maltraitance dans son enfance?';
+$s_contacte= 'Contacts d&eacute;j&agrave; pris';
+$s_bes_vio= 'Besoins li&eacute;s &agrave; la situation de violence';
+$s_bes_soc= 'Besoins d&apos;ordre social';
+#les enums
+$s_bes_vio_enum_string = '9:Aide juridique,1:Aide psychologique,2:Demande de renseignements,3:Divorce,4:Expatriation,5:Mediation familiale,6:Protection physique,7:Separation,8:autre';
+$s_bes_soc_enum_string = '7:Acces aux droits,1:Aide alimentaire,2:Aide d&eacute;marches administratives,3:Aide financiere,4:Redaction de courrier,5:Recherche emploi-formation,6:Autre';
+	$s_nb_maincour_enum_string =$s_nb_plaintesgend_enum_string = $s_nb_plaintes_enum_string = 'Si oui, nbre de fois :';
+	$s_nb_plaintesko_enum_string = 'nbre de pl refus&eacute;es :';
+	$s_nb_plainteskogend_enum_string = 'nbre de pl refus&eacute;es :';
+	$s_suite_plaintes_enum_string = 'Suite donn&eacute;e aux plaintes/mains courantes';
+	$s_attente_enum_string          = '0:pris en charge,1:sur place,2:rappel t&eacute;l&eacute;phonique';
+	$s_nationalite_enum_string          = '0:France,1:Afghanistan,2:Afrique du Sud,3:Albanie,4:Alg&eacute;rie,5:Allemagne,6:Andorre,7:Angola,8:Anguilla,9:Antarctique,10:Antigua-et-Barbuda,11:Antilles n&eacute;erlandaises,12:Arabie saoudite,13:Argentine,14:Arm&eacute;nie,15:Aruba,16:Australie,17:Autriche,18:Azerba&iuml;djan,19:Bahamas,20:Bahre&iuml;n,21:Bangladesh,22:Barbade,23:Belgique,24:Belize,25:Bermudes,26:Bhoutan,27:Bolivie,28:Bosnie-Herz&eacute;govine,29:Botswana,30:Brun&eacute;i Darussalam,31:Br&eacute;sil,32:Bulgarie,33:Burkina Faso,34:Burundi,35:B&eacute;larus,36:B&eacute;nin,37:Cambodge,38:Cameroun,39:Canada,40:Cap-Vert,41:Chili,42:Chine,43:Chypre,44:Colombie,45:Comores,46:Congo,47:Cor&eacute;e du Nord,48:Cor&eacute;e du Sud,49:Costa Rica,50:Croatie,51:Cuba,52:C&ocirc;te d&rsquo;Ivoire,53:Danemark,54:Djibouti,55:Dominique,56:El Salvador,57:Espagne,58:Estonie,59:Fidji,60:Finlande,62:Gabon,63:Gambie,64:Ghana,65:Gibraltar,66:Grenade,67:Groenland,68:Gr&egrave;ce,69:Guadeloupe,70:Guam,71:Guatemala,72:Guernesey,73:Guin&eacute;e,74:Guin&eacute;e &eacute;quatoriale,75:Guin&eacute;e-Bissau,76:Guyana,77:Guyane fran&ccedil;aise,78:G&eacute;orgie,79:G&eacute;orgie du Sud et les Iles Sandwich du Sud,80:Ha&iuml;ti,81:Honduras,82:Hongrie,83:Inde,84:Indon&eacute;sie,85:Irak,86:Iran,87:Irlande,88:Islande,89:Isra&euml;l,90:Italie,91:Jama&iuml;que,92:Japon,93:Jersey,94:Jordanie,95:Kazakhstan,96:Kenya,97:Kirghizistan,98:Kiribati,99:Kowe&iuml;t,100:Laos,101:Lesotho,102:Lettonie,103:Liban,104:Libye,105:Lib&eacute;ria,106:Liechtenstein,107:Lituanie,108:Luxembourg,109:Mac&eacute;doine,110:Madagascar,111:Malaisie,112:Malawi,113:Maldives,114:Mali,115:Malte,116:Maroc,117:Martinique,118:Maurice,119:Mauritanie,120:Mayotte,121:Mexique,122:Moldavie,123:Monaco,124:Mongolie,125:Montserrat,126:Mont&eacute;n&eacute;gro,127:Mozambique,128:Myanmar,129:Namibie,130:Nauru,131:Nicaragua,132:Niger,133:Nig&eacute;ria,134:Niue,135:Norv&egrave;ge,136:Nouvelle-Cal&eacute;donie,137:Nouvelle-Z&eacute;lande,138:N&eacute;pal,139:Oman,140:Ouganda,141:Ouzb&eacute;kistan,142:Pakistan,143:Palaos,144:Panama,145:Papouasie-Nouvelle-Guin&eacute;e,146:Paraguay,147:Pays-Bas,148:Philippines,149:Pitcairn,150:Pologne,151:Polyn&eacute;sie fran&ccedil;aise,152:Porto Rico,153:Portugal,154:P&eacute;rou,155:Qatar,156:R.A.S. chinoise de Hong Kong,157:R.A.S. chinoise de Macao,158:Roumanie,159:Royaume-Uni,160:Russie,161:Rwanda,162:R&eacute;publique centrafricaine,163:R&eacute;publique dominicaine,164:R&eacute;publique d&eacute;mocratique du Congo,165:R&eacute;publique tch&egrave;que,166:R&eacute;union,167:Sahara occidental,168:Saint-Barth&eacute;l&eacute;my,169:Saint-Kitts-et-Nevis,170:Saint-Marin,171:Saint-Martin,172:Saint-Pierre-et-Miquelon,173:Saint-Vincent-et-les Grenadines,174:Sainte-H&eacute;l&egrave;ne,175:Sainte-Lucie,176:Samoa,177:Samoa am&eacute;ricaines,178:Sao Tom&eacute;-et-Principe,179:Serbie,180:Serbie-et-Mont&eacute;n&eacute;gro,181:Seychelles,182:Sierra Leone,183:Singapour,184:Slovaquie,185:Slov&eacute;nie,186:Somalie,187:Soudan,188:Sri Lanka,189:Suisse,190:Suriname,191:Su&egrave;de,192:Svalbard et Ile Jan Mayen,193:Swaziland,194:Syrie,195:S&eacute;n&eacute;gal,196:Tadjikistan,197:Tanzanie,198:Ta&iuml;wan,199:Tchad,200:Terres australes fran&ccedil;aises,201:Territoire britannique de l&apos;oc&eacute;an Indien,202:Territoire palestinien,203:Tha&iuml;lande,204:Timor oriental,205:Togo,206:Tokelau,207:Tonga,208:Trinit&eacute;-et-Tobago,209:Tunisie,210:Turkm&eacute;nistan,211:Turquie,212:Tuvalu,213:Ukraine,214:Uruguay,215:Vanuatu,216:Venezuela,217:Vi&ecirc;t Nam,218:Wallis-et-Futuna,219:Y&eacute;men,220:Zambie,221:Zimbabwe,222:r&eacute;gion ind&eacute;termin&eacute;e,223:&Eacute;gypte,224:&Eacute;mirats arabes unis,225:&Eacute;quateur,226:&Eacute;rythr&eacute;e,227:&Eacute;tat de la Cit&eacute; du Vatican,228:&Eacute;tats f&eacute;d&eacute;r&eacute;s de Micron&eacute;sie,229:&Eacute;tats-Unis,230:&Eacute;thiopie,231:&Icirc;le Bouvet,232:&Icirc;le Christmas,233:&Icirc;le Norfolk,234:&Icirc;le de Man,235:&Icirc;les Ca&iuml;mans,236:&Icirc;les Cocos - Keeling,237:&Icirc;les Cook,238:&Icirc;les F&eacute;ro&eacute;,239:&Icirc;les Heard et MacDonald,240:&Icirc;les Malouines,241:&Icirc;les Mariannes du Nord,242:&Icirc;les Marshall,243:&Icirc;les Mineures &eacute;loign&eacute;es des &eacute;tats-Unis,244:&Icirc;les Salomon,245:&Icirc;les Turks et Ca&iuml;ques,246:&Icirc;les Vierges britanniques,247:&Icirc;les Vierges des &eacute;tats-Unis,248:&Icirc;les &Aring;land,249:Saint-Domingue';
+	$s_orig_orient_enum_string          = '13:115, 1:A.D.I., 2:assistante sociale, 3:autre association, 4:corps medical/struct hosp., 5:DIECCTE , 6:gendarmerie , 7:medecine du travail, 8:pole emploi , 9:police, 10:relation personnelle/ami(e), 14:spontan&eacute;e, 11:syndicat, 12:autre';
+	$s_connu_assoc_enum_string          = '0:N/A , 1:entourage familial , 2:medias , 3:prof med/ social , 4:collegues , 5:ami(es)';
+	$s_nom_logem_enum_string          = '0:N/A, 1:M., 2:Mme, 3:Mr et Mme, 4:Parents/ami(e)s, 5:SDF';
+	$s_type_logem_enum_string          = '0:Aucun, 1:Locataire (social), 2:Locataire (priv&eacute;), 3:Propri&eacute;taire, 4:H&eacute;berg&eacute;e';
+	$s_matrim_enum_string          = $s_matrim_ant_enum_string          = '8:C&eacute;libataire, 1:Mari&eacute;e, 2:Divorc&eacute;e, 3:Veuve, 4:Union libre, 5:PACS, 6:S&eacute;par&eacute;e, 7:En instance de divorce';
+	$s_enf_pere_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_enf_recon_enum_string          = '0:N/A, 1:Aucun, 2:Une partie, 3:Tous';
+	$s_sit_prof_enum_string          = '0: N/A, 1:Salari&eacute;e, 2:Ch&ocirc;mage, 3:Femme/M&egrave;re au foyer, 4:Retrait&eacute;e, 5:Etudiante , 6:En formation, 7:A son compte, 8:En stage , 9:Autre';
+	$s_niv_scolr_enum_string          = '0:Aucun, 1:Primaire, 2:Secondaire, 3:Coll&egrave;ge, 4:CAP/BEP, 5:Lyc&eacute;e, 6:Bac, 7:Et. sup&eacute;rieures';
+	$s_cddcdi_enum_string          = '0:N/A, 1:CDD, 2:CDI';
+	$s_typ_contrat_enum_string          = '0:Aucun, 1:Adulte relais, 2:CAE, 3:Contrat d&apos;avenir, 4:Droit commun, 5:Autre';
+	$s_secteur_activ_enum_string          = '0:Aucun, 1:Primaire, 2:Secondaire, 3:Tertiaire';
+	$s_type_ent_enum_string          = '0:N/A, 1:Association, 2:Monde politique, 3:Priv&eacute;, 4:Public Col locale, 5:Public Etat, 6:Sportif';
+	$s_csp_enum_string          = '0:Aucun, 1:Agricultrice, 2:Artisane-commer&ccedil;ante, 3:Ouvri&egrave;re, 4:Employ&eacute;e, 5:Cadre, 6:Pers. de direction, 7:Profession lib&eacute;rale';
+	$s_prestations_enum_string          = '11:All. Logmt , 1:All.fam., 2:A.A.H , 3:Al Parent Isol&eacute;, 4:Assedic, 5:RMI, 6:A.E.S (al enf handic), 7:Al Soutien Fam., 8:RSA, 9:APED, 10:Autre';
+	$s_mere_victime_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_plaintes_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_plaintes_gend_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_maincour_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_deja_vict_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_vict_enfce_enum_string          = '0:N/A, 1:Oui, 2:Non';
+	$s_contacte_enum_string          = '0:N/A , 1:Avocat(e), 2:M&eacute;decin du travail, 3:Prud&apos;hommes, 4:Syndicats, 5:CDMT, 6:CFDT, 7:CGTM-FSM, 8:DIECCTE, 9:FO, 10:SE, 11:UGTM, 12:Autre';
+#enum des problemes
+$s_dur_violence_enum_string = '0:N/A,1:moins d&apos;1 an,2:1 &agrave; 3 ans,3:3 &agrave; 5 ans,4:5 &agrave; 10 ans,5: + de 10 ans';
+	$s_lieu_violence_enum_string = '3:dans le couple, 1:au travail, 2:autre';
+	$s_nat_vio_cpl_enum_string = '0:Aucun,15:Violence sexuelle,1:Harc&egrave;lement sexuel,2:Viol,3:Violence physique,4:Agression verbale,5:Menaces verbales,6:Menaces avec objet,7:Menaces de mort,8:Violence &eacute;conomique,9:Violence psy/harc&egrave;lement moral,10:Exclusion du domicile,11:D&eacute;gradation de biens,12:Vol d&rsquo;effets personnels,13:S&eacute;questration,14:Autre';
+	$s_enf_temoin_cpl_enum_string = '0:N/A,2:oui,3:non,4:NSP';
+	$s_enf_vio_cpl_enum_string = '0:N/A,2:oui,3:non,4:NSP';
+	#$s_comm_cpl_enum_string = '';
+	$s_cond_trav_enum_string = '0:Aucun,15:Absence de t&acirc;ches,2:Baisse de notation/Refus de promotion,3:Critiques exag&eacute;r&eacute;es,4:Non acc&egrave;s aux outils de travail/D&eacute;t&eacute;rioration du poste de travail,5:Pouss&eacute;e &agrave; la faute/D&eacute;mission,6:R&eacute;tention d&apos;information,7:Refus de l&apos;application des droits,8:Surcharge de travail/Conitions impossibles &agrave; executer,9:T&acirc;ches sans rapport avec le profil/dangereuses,10:Autre probl&egrave;me';
+	$s_isol_trav_enum_string = '1:Non communication normale,2:Isolement physique,3:Refus d&apos;entretien,4:Autre probl&egrave;me';
+	$s_dign_trav_enum_string = '1:Discr&eacute;dit,2:Humiliations,3:Mensonges sur la personne,4:Moqueries sur le physique,5:Propos et gestes m&eacute;prisants,6:Autre';
+	$s_vio_trav_enum_string = '1:Agressions verbales/injures/insultes,2:D&eacute;t&eacute;rioration d&apos;effets personnels,3:Harc&egrave;lement sexuel,4:harc&egrave;lement t&eacute;l&eacute;ph, courrier, physique,5:Menace physique,6:Menace avec objet ,7:Menace de mort,8:Menace verbale,9:Violence physique,10:Violence sexuelle,11:Viol,12:autre probl&egrave;me ';
+	$s_juri_trav_enum_string = '1:Contrat de travail,2:D&eacute;claration sociale,3:Paiement salaires,4:Respect des horaires,5:Remise de document de fin de contrat,6:Autre probl&egrave;me';
+	$s_domaine_enum_string = '0:N/A,2:Civil,3:P&eacute;nal';
+	#$s_nom_vio_enum_string = '';
+	#$s_prenom_vio_enum_string = '';
+	#$s_age_vio_enum_string = '';
+	$s_sexe_vio_enum_string = '0:N/A,2:Homme,3:Femme';
+	$s_adresse_vio_enum_string = '0:N/A,2:M&ecirc;me,3:Autre';
+	#$s_emploi_vio_enum_string = '';
+	#$s_ressources_vio_enum_string = '';
+	$s_secteur_vio_enum_string = '0:Aucun,1:Primaire,2:Secondaire,3:Tertiaire';
+	$s_csp_vio_enum_string = $s_csp_enum_string;
+	$s_lien_vict_vio_enum_string = '0:Aucun,2:Ami,3:Coll&egrave;gue,4:Concubin,5:Collaborateur,6:Mari,7:Ex-mari,8:Ex-concubin,9:Ex-ami,10:P&egrave;re du ou des enfants,11:Enfant,12:Patron,13:Sup&eacute;rieur hi&eacute;rarchique,14:Propri&eacute;taire,15:Voisin,16:Responsable de stage/formation,17:Autre';
+	$s_vict_enf_vio_enum_string = '0:N/A,2:oui,3:non,4:NSP';;
+	$s_mere_vict_vio_enum_string = '0:N/A,2:oui,3:non,4:NSP';;
+	$s_pb_vio_enum_string = '1:Toxicomanie,2:Alcoolisme,3:Incarc&eacute;r&eacute;,4:D&eacute;s&eacute;quilibre mental m&eacute;dicalement connu,5:Autre,6:Pas de probl&egrave;me connu';
+	#$s_comm_vio_enum_string = '';
+	$s_cons_phys_enum_string = '1:Fatigue,2:Insomnies/cauchemars,3:Maladie,4:Perte/prise de poids,5:Pertes de m&eacute;moire,6:Autres troubles psychosomatiques';
+	$s_cons_psy_enum_string = '1:D&eacute;pression,2:Perte de confiance,3:Peur,4:Stress/anxi&eacute;t&eacute;';
+	$s_cons_trav_enum_string = '1:Arr&ecirc;ts maladie,2:CLM/CLD,3:D&eacute;mission,4:Inaptitude au travail';
+	$s_cons_soc_enum_string = '1:Divorce/s&eacute;paration (violences au travail),2:Refus de vie sociale/enfermement';
+	#$s_cons_comm_enum_string = '';
+
+
+# view_all_bug_page.php
+$s_any = 'toutes';
+$s_all = 'toutes';
+$s_show = 'Show';
+$s_changed = 'Changed(hrs)';
+$s_viewing_bugs_title = 'Liste des dossiers';
+$s_updated = 'Mis &agrave; jour';
+$s_sticky = 'Show Sticky Issues';
+$s_sort = 'Classer par';
+$s_issue_id = 'N&ordm; dossier';
+$s_recently_visited = 'Recently Visited';
+$s_motif_contact_abbreviation = 'P';
+$s_note_user_id = 'Note By';
+$s_filter_match_type = 'Match Type';
+$s_filter_match_all = 'All Conditions';
+$s_filter_match_any = 'Any Condition';
+
+# view_all_inc.php
+$s_none = 'aucune';
+$s_current = 'current';
+$s_search = 'Rechercher';
+$s_view_prev_link = 'View Prev';
+$s_view_next_link = 'View Next';
+$s_prev = 'Pr&eacute;c.';
+$s_next = 'Suiv.';
+$s_first = '1er';
+$s_last = 'Dernier';
+$s_start_date = 'Du ';
+$s_end_date = '...au ';
+$s_use_date_filters = 'Par date';
+$s_yes = 'Oui';
+$s_no = 'Non';
+$s_open_filters = 'Change Filter';
+$s_or_unassigned = 'Or Unassigned';
+$s_ok = 'OK';
+$s_select_all = 'Selectionner tout';
+
+# stored query strings
+$s_use_query = 'Use Filter';
+$s_delete_query = 'Delete Filter';
+$s_query_deleted = 'Filter Deleted';
+$s_save_query = 'Save Current Filter';
+$s_reset_query = 'Remettre &agrave; z&eacute;ro';
+$s_query_name = 'Filter Name';
+$s_query_exists = 'This particular filter appears to already exist.';
+$s_query_dupe_name = 'Another filter already has this name. Please choose a different name for this filter.';
+$s_query_blank_name = 'You cannot store a filter without a name. Please give this filter a name before saving it.';
+$s_query_name_too_long = 'You cannot store a filter name with more than 64 characters. Please give this filter a shorter name.';
+$s_query_store_error = 'There was an error saving this filter.';
+$s_open_queries = 'Manage Filters';
+$s_query_delete_msg = 'Are you sure you wish to delete this filter?';
+
+# bug_view_advanced_page.php
+$s_view_simple_link = 'View Simple';
+$s_product_build = 'Product Build';
+$s_system_profile = 'System Description';
+$s_update_bug_button = 'Modifier le dossier';
+$s_bug_assign_to_button = 'Changer &eacute;coutante:';
+$s_bug_status_to_button = 'Changer &eacute;tape:';
+$s_reopen_bug_button = 'Rouvrir';
+$s_close_bug_button = 'Fermer le dossier';
+$s_move_bug_button = 'Move';
+$s_attached_files = 'Pi&egrave;ces jointes';
+$s_publish = 'Publish';
+$s_cached = 'Cached';
+$s_add_user_to_monitor = 'ajouter';
+
+# view_bug_inc.php
+
+# view_bug_page.php
+# print_all_bug_page_word.php
+$s_bug_view_title = $s_enter_report_details_title;
+
+# bug_monitor_list_view_inc.php
+$s_no_users_monitoring_bug = 'Personne';
+$s_users_monitoring_bug = 'Demandes de rappel';
+$s_monitoring_user_list = 'Liste des demandes de rappel';
+
+# bug_sponsorship_list_view_inc.php
+$s_no_users_sponsoring_bug = 'There are no users sponsoring this issue.';
+$s_users_sponsoring_bug = 'Users sponsoring this issue';
+$s_sponsors_list = 'Sponsors List';
+$s_total_sponsorship_amount = 'Total Sponsorship = %1$s';
+
+# custom field strings
+$s_add_custom_field_button = 'New Custom Field';
+$s_delete_custom_field_button = 'Delete Custom Field';
+$s_delete_custom_field_everywhere = 'Delete Custom Field Everywhere';
+$s_update_custom_field_button = 'Update Custom Field';
+$s_add_existing_custom_field = 'Add This Existing Custom Field';
+$s_edit_custom_field_title = 'Edit custom field';
+$s_custom_field = 'Field';
+$s_custom_fields_setup = 'Custom Fields';
+$s_custom_field_name = 'Name';
+$s_custom_field_project_count = 'Project Count';
+$s_custom_field_type = 'Type';
+$s_custom_field_possible_values = 'Possible Values';
+$s_custom_field_default_value = 'Default Value';
+$s_custom_field_valid_regexp = 'Regular Expression';
+$s_custom_field_access_level_r = 'Read Access';
+$s_custom_field_access_level_rw = 'Write Access';
+$s_custom_field_length_min = 'Min. Length';
+$s_custom_field_length_max = 'Max. Length';
+$s_custom_field_filter_by = 'Add to Filter';
+$s_custom_field_display_report = 'Display When Reporting Issues';
+$s_custom_field_display_update = 'Display When Updating Issues';
+$s_custom_field_display_resolved = 'Display When Resolving Issues';
+$s_custom_field_display_closed = 'Display When Closing Issues';
+$s_custom_field_require_report = 'Required On Report';
+$s_custom_field_require_update = 'Required On Update';
+$s_custom_field_require_resolved = 'Required On Resolve';
+$s_custom_field_require_closed = 'Required On Close';
+$s_link_custom_field_to_project_title = 'Link custom field to project';
+$s_link_custom_field_to_project_button = 'Link Custom Field';
+$s_linked_projects = 'Linked Projects';
+
+$s_custom_field_sequence = 'Sequence';
+$s_custom_field_type_enum_string = '0:String,1:Numeric,2:Float,3:Enumeration,4:E-mail,5:Checkbox,6:List,7:Multiselection list,8:Date,9:Radio';
+
+$s_confirm_used_custom_field_deletion = 'This field is currently linked to at least one project. If you continue all values for this field will be permanently deleted. This action cannot be undone. If you do not want to delete this field, hit the Back button in your browser. To proceed, click the button below';
+$s_confirm_custom_field_deletion = 'Are you sure you want to delete this custom field and all associated values?';
+$s_field_delete_button = 'Delete Field';
+
+$s_confirm_custom_field_unlinking = 'Are you sure you want to unlink this custom field from the project? The values will not be deleted as long as the custom field itself is not deleted.';
+$s_field_remove_button = 'Remove Field';
+
+$s_hide_status = 'Hide Status';
+$s_filter_closed = 'Ferm&eacute;';
+$s_filter_resolved = 'Resolved';
+$s_hide_closed = 'Hide Closed';
+$s_hide_resolved = 'Hide Resolved';
+$s_and_above = 'And Above';
+$s_advanced_filters = 'Advanced Filters';
+$s_simple_filters = 'Simple Filters';
+$s_monitored_by = 'Monitored By';
+
+$s_attachments = 'pi&egrave;ces jointes';
+$s_bytes = 'bytes';
+$s_attachment_missing = 'Attachment missing';
+$s_attachment_count = 'Attachment count';
+$s_view_attachments_for_issue = 'Voir %1$d pi&egrave;ce(s) jointe(s) du dossier #%2$d';
+
+# PHPMailer
+$s_phpmailer_language = 'en';
+
+# Sponsorship Strings
+$s_sponsors = '%1$d sponsor(s)';
+$s_sponsorship_added = 'Sponsorship Added';
+$s_sponsorship_updated = 'Sponsorship Updated';
+$s_sponsorship_deleted = 'Sponsorship Deleted';
+$s_sponsorship_paid = 'Sponsorship Paid';
+$s_sponsorship_more_info = 'More information about sponsorship';
+$s_sponsorship_total = 'Sponsorship Total';
+
+# URL explaining the process of sponsoring an issue. This is defined here rather than
+# in the config to allow for a URL per language. This can be set to an empty string if there
+# is not need to provide such process information.
+$s_sponsorship_process_url = '';
+
+# Changelog
+$s_changelog = 'Change Log';
+$s_changelog_empty = 'No Change Log information available';
+
+# Roadmap
+$s_roadmap = 'Roadmap';
+$s_resolved_progress = '%1$d of %2$d issue(s) resolved. Progress (%3$d%%).';
+
+# Http auth
+$s_http_auth_realm = 'Site Login';
+
+$s_bug = 'issue';
+$s_bugs = 'issues';
+$s_add_new_relationship = 'New relationship';
+$s_add_new_relationship_button = 'ajouter';
+$s_this_bug = 'Current issue';
+$s_relationship_added = 'Relationship added';
+$s_relationship_deleted = 'Relationship deleted';
+$s_no_relationship = 'no relationship';
+$s_relationship_replaced = 'Relationship replaced';
+$s_replace_relationship_button = 'Replace';
+$s_replace_relationship_sure_msg = 'There is already a relationship between the two issues. Are you sure you want to replace it?';
+$s_relationship_with_parent = 'Relationship with the parent issue';
+$s_delete_relationship_button = 'Supprimer';
+$s_delete_relationship_sure_msg = 'Are you sure you wish to delete this relationship?';
+$s_relationship_warning_blocking_bugs_not_resolved = 'Not all the children of this issue are yet resolved or closed.';
+$s_relationship_warning_blocking_bugs_not_resolved_2 = '<b>Attention:</b> Not all the children of this issue are yet resolved or closed.<br />Before <b>resolving/closing</b> a parent issue, all the issues related as child with this one should be resolved or closed.';
+$s_create_child_bug_button = 'Clone';
+$s_bug_cloned_to = 'Issue cloned';
+$s_bug_created_from = 'Issue generated from';
+$s_copy_from_parent = 'Copy extended data from parent issue';
+$s_copy_notes_from_parent = 'Copy bug notes';
+$s_copy_attachments_from_parent = 'Copy attachments';
+
+# Relationship Graphs
+$s_viewing_bug_relationship_graph_title = 'Relationship Graph';
+$s_viewing_bug_dependency_graph_title = 'Dependency Graph';
+$s_relation_graph = 'Relation Graph';
+$s_dependency_graph = 'Dependency Graph';
+$s_vertical = 'Vertical';
+$s_horizontal = 'Horizontal';
+$s_view_issue = 'View Issue';
+
+# Source Control Integration
+$s_checkin = 'Checkin';
+
+# Pemissions report
+$s_perm_rpt_capability = 'Capability';
+$s_view = 'View';
+$s_issues = 'Issues';
+$s_report_issue = 'Report an issue';
+$s_update_issue = 'Update an issue';
+$s_monitor_issue = 'Monitor an issue';
+$s_handle_issue = 'Handle an issue';
+$s_move_issue = 'Move an issue';
+$s_delete_issue = 'Delete an issue';
+$s_reopen_issue = 'Reopen an issue';
+$s_view_private_issues = 'View private issues';
+$s_update_readonly_issues = 'Update readonly issues';
+$s_update_issue_status = 'Update issue status';
+$s_set_view_status = 'Set view status (public vs private)';
+$s_update_view_status = 'Update view status (public vs private)';
+$s_show_list_of_users_monitoring_issue = 'Show list of users monitoring issue';
+$s_notes = 'Notes';
+$s_add_notes = 'Add notes';
+$s_update_notes = 'Update notes';
+$s_delete_note = 'Delete note';
+$s_view_private_notes = 'View private notes';
+$s_news = 'News';
+$s_view_private_news = 'View private news';
+$s_manage_news = 'Manage news';
+$s_view_list_of_attachments = 'View list of attachments';
+$s_download_attachments = 'Download attachments';
+$s_delete_attachments = 'Delete attachments';
+$s_delete_attachment_button = 'Supprimer';
+$s_delete_attachment_sure_msg = '&Ecirc;tes vous sur de vouloir supprimer ce fichier ?';
+$s_upload_issue_attachments = 'Upload issue attachments';
+$s_filters = 'Filters';
+$s_save_filters = 'Save filters';
+$s_save_filters_as_shared = 'Save filters as shared';
+$s_use_saved_filters = 'Use saved filters';
+$s_create_project = 'Create project';
+$s_delete_project = 'Delete project';
+$s_manage_project = 'Manage project';
+$s_manage_user_access_to_project = 'Manage user access to a project';
+$s_automatically_included_in_private_projects = 'Automatically included in private projects';
+$s_project_documents = 'Project Documents';
+$s_view_project_documents = 'View project documents';
+$s_upload_project_documents = 'Upload project documents';
+$s_link_custom_fields_to_projects = 'Link custom fields to projects';
+$s_sponsorships = 'Sponsorships';
+$s_view_sponsorship_details = 'View sponsorship details';
+$s_view_sponsorship_total = 'View sponsorship total';
+$s_sponsor_issue = 'Sponsor issue';
+$s_assign_sponsored_issue = 'Assign sponsored issue';
+$s_handle_sponsored_issue = 'Handle sponsored issue';
+$s_others = 'Others';
+$s_see_email_addresses_of_other_users = 'See e-mail addresses of other users';
+$s_send_reminders = 'Send reminders';
+$s_receive_reminders = 'Receive reminders';
+$s_add_profiles = 'Add profiles';
+$s_notify_of_new_user_created = 'Notify of new user created';
+$s_email_notification = 'E-mail notification';
+$s_status_changed_to = 'Status changes to';
+$s_email_on_deleted = 'E-mail on Deleted';
+$s_email_on_sponsorship_changed = 'E-mail on Sponsorship changed';
+$s_email_on_relationship_changed = 'E-mail on Relationship changed';
+
+# DHTML filters
+$s_loading = 'Loading...';
+
+# filter_api.php
+$s_between_date = 'Between';
+$s_on_or_before_date = 'On Or Before';
+$s_before_date = 'Before';
+$s_after_date = 'After';
+$s_on_or_after_date = 'On Or After';
+
+# Date constants
+$s_from_date = 'Du';
+$s_to_date = 'Au';
+$s_on_date = 'Le ';
+
+# Switch constants
+$s_on = 'On';
+$s_off = 'Off';
+
+# wiki related strings
+$s_wiki = 'Wiki';
+
+# Tagging
+$s_tags = 'Tags';
+$s_tag_details = 'Tag Details: %1$s';
+$s_tag_id = 'Tag ID';
+$s_tag_name = 'Name';
+$s_tag_creator = 'Creator';
+$s_tag_created = 'Date de cr&eacute;ation';
+$s_tag_updated = 'Last Updated';
+$s_tag_description = 'Tag Description';
+$s_tag_statistics = 'Usage Statistics';
+$s_tag_update = 'Update Tag: %1$s';
+$s_tag_update_return = 'Back to Tag';
+$s_tag_update_button = 'Update Tag';
+$s_tag_delete_button = 'Delete Tag';
+$s_tag_delete_message = 'Are you sure you wish to delete this tag?';
+$s_tag_existing = 'Existing tags';
+$s_tag_none_attached = 'No tags attached.';
+$s_tag_attach = 'Attach';
+$s_tag_attach_long = 'Attach Tags';
+$s_tag_attach_failed = 'Tag attachment failed.';
+$s_tag_detach = 'Detach "%1$s"';
+$s_tag_separate_by = '(Separate by "%1$s")';
+$s_tag_invalid_name = 'Invalid tag name.';
+$s_tag_create_denied = 'Create permission denied.';
+$s_tag_filter_default = 'Attached Issues (%1$s)';
+$s_tag_history_attached = 'Tag Attached';
+$s_tag_history_detached = 'Tag Detached';
+$s_tag_history_renamed = 'Tag Renamed';
+$s_tag_related = 'Related Tags';
+$s_tag_related_issues = 'Shared Issues (%1$s)';
+$s_tag_stats_attached = 'Issues attached: %1$s';
+$s_tag_create = 'Create Tag';
+$s_show_all_tags = 'All';
+
+# Time Tracking
+$s_time_tracking_billing_link = 'Time Tracking';
+$s_time_tracking = 'Time tracking';
+$s_time_tracking_time_spent = 'Time spent:';
+$s_time_tracking_get_info_button = 'Get Time Tracking Information';
+$s_time_tracking_cost_per_hour = 'Cost / Hour';
+$s_time_tracking_cost = 'Cost';
+$s_total_time_for_issue = 'Total time for issue = %1$s';
+$s_time_tracking_stopwatch_start = 'Start';
+$s_time_tracking_stopwatch_stop = 'Stop';
+$s_time_tracking_stopwatch_reset = 'Reset';
+
+$s_access_denied = 'Access Denied.';
+
+# Twitter Integration
+$s_twitter_resolved = '%1$d: [%2$s] %3$s (resolved by %4$s in %5$s)';
+$s_twitter_resolved_no_version = '%1$d: [%2$s] %3$s (resolved by %4$s)';
+
+# Project Page
+$s_development_team = 'Development Team';
+
+# manage columns page
+$s_manage_columns_config = 'Manage Columns';
+$s_all_columns_title = 'All Available Columns';
+$s_csv_columns_title = 'CSV Columns';
+$s_view_issues_columns_title = 'View Issues Columns';
+$s_print_issues_columns_title = 'Print Issues Columns';
+$s_excel_columns_title = 'Excel Columns';
+$s_update_columns_as_global_default = 'Update Columns as Global Default for All Projects';
+$s_update_columns_for_current_project = 'Update Columns For Current Project';
+$s_update_columns_as_my_default = 'Update Columns as Default for All Projects';
+$s_reset_columns_configuration = 'Reset Columns Configuration';
+$s_copy_columns_from = 'Copy Columns From';
+$s_copy_columns_to = 'Copy Columns To';
+
+# due date
+$s_due_date = 'Due Date';
+$s_overdue = 'Overdue';
+
+#account_view_page.php
+$s_view_account_title = 'User Information';
+
+# view_user_page.php
+$s_manage_user = 'Manage User';
+
+# separators
+$s_word_separator = '&#32;';
+
+# admin pages
+$s_install_information = 'Site Installation Information';
+$s_database_information = 'Site Database Information';
+$s_path_information = 'Site Path Information';
+
+# months
+$s_month_january = 'Janvier';
+$s_month_february = 'F&eacute;vrier';
+$s_month_march = 'Mars';
+$s_month_april = 'Avril';
+$s_month_may = 'Mai';
+$s_month_june = 'Juin';
+$s_month_july = 'Juillet';
+$s_month_august = 'Ao&ucirc;t';
+$s_month_september = 'Septembre';
+$s_month_october = 'Octobre';
+$s_month_november = 'Novembre';
+$s_month_december = 'Decembre';
+
+#bugnote nouveaux champs
+$s_dur_violence = 'Depuis quand durent les violences ?';
+$s_lieu_violence = 'Lieu des violences :';
+$s_nat_vio_cpl = 'Nature des violences  :';
+$s_enf_temoin_cpl = 'Les enfants sont-ils t&eacute;moins des violences ?';
+$s_enf_vio_cpl = 'Y a-t-il violences envers les enfants ?';
+$s_cond_trav = 'Atteintes aux conditions de travail';
+$s_isol_trav = 'Isolement et refus de communication :';
+$s_dign_trav = 'Atteintes &agrave; la dignit&eacute; :';
+$s_vio_trav = 'Violence verbale, physique, sexuelle :';
+$s_juri_trav = 'Probl&egrave;me juridique sur :';
+$s_domaine = 'Faits relatifs au domaine :';
+$s_nom_vio = 'Nom :';
+$s_prenom_vio = $s_prenom;
+$s_age_vio = '&acirc;ge';
+$s_sexe_vio = $s_sexe;
+$s_adresse_vio = $s_adresse;
+$s_emploi_vio = $s_emploi;
+$s_ressources_vio = $s_ressources;
+$s_secteur_vio = $s_secteur_activ;
+$s_csp_vio = $s_csp;
+$s_lien_vict_vio = 'Lien avec la victime :';
+$s_vict_enf_vio = 'A-t-il &eacute;t&eacute; victime de maltraitance dans son enfance ? :';
+$s_mere_vict_vio = 'Sa mere est-elle, ou a-t-elle &eacute;t&eacute; victime de violences conjugales :';
+$s_pb_vio = 'Probl&egrave;mes particuliers  :';
+$s_bes_com= $s_comm_cpl = $s_cons_comm = $s_comm_vio = 'Commentaires :';
+$s_cons_phys = 'Physiques :';
+$s_cons_psy = 'Psychologiques :';
+$s_cons_trav = 'Au travail :';
+$s_cons_soc = 'Sociales :';
