@@ -554,16 +554,10 @@ echo '</fieldset><fieldset><legend>HISTOIRE DE LA VICTIME</legend>';
 			Affiche('note_general');
 echo '</fieldset>';
 
-/*foreach ($t_fields as &$value) {
-    Affiche($value);
-}*/
-
 		echo '</ul>';
 	}
 
-	#
-	# Product Version, Product Build
-	#
+	
 
 	if ( $tpl_show_product_version || $tpl_show_product_build ) {
 		$t_spacer = 2;
@@ -711,11 +705,7 @@ echo '</fieldset>';
 	# User list sponsoring the bug
 	include( $tpl_mantis_dir . 'bug_sponsorship_list_view_inc.php' );
 
-	# Bug Relationships
-	/*if ( $tpl_show_relationships_box ) {
-		relationship_view_box ( $tpl_bug->id );
-	}*/
-	# Attachments
+	# Pièces jointes
 	if ( $tpl_show_attachments ) {
 		echo '<ul ', helper_alternate_class(), '>';
 		echo '<li><label class="description"><a name="attachments" id="attachments" />', lang_get( 'attached_files' ), '</label>';
@@ -723,7 +713,7 @@ echo '</fieldset>';
 		print_bug_attachments_list( $tpl_bug_id );
 		echo '</div></li></ul>';
 	}
-	# File upload box
+	# Upload de fichiers
 	if ( $tpl_show_upload_form ) {
 		include( $tpl_mantis_dir . 'bug_file_upload_inc.php' );
 	}
@@ -752,8 +742,9 @@ echo '</fieldset>';
 		include( $tpl_mantis_dir . 'bugnote_view_inc.php' );
 		
 	}
-include( 'nouv_contact.php' );
-echo '</div>';
+	
+	include( 'nouv_contact.php' );
+	echo '</div>';
 
 	# Allow plugins to display stuff after notes
 	event_signal( 'EVENT_VIEW_BUG_EXTRA', array( $f_bug_id ) );
@@ -764,11 +755,7 @@ echo '</div>';
 		include( $tpl_mantis_dir . 'bugnote_stats_inc.php' );
 	}
 
-	# History
-	/*if ( $tpl_show_history ) {
-		include( $tpl_mantis_dir . 'history_inc.php' );
-	}*/
-
+	
 	html_page_bottom();
 
 	last_visited_issue( $tpl_bug_id );

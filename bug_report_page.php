@@ -671,16 +671,6 @@ echo '</fieldset>';
 </ul>
 </form>
 
-
-<?php
-#Autofocus JS
-/*if ( ON == config_get( 'use_javascript' ) ) { ?>
-<script type="text/javascript" language="JavaScript">
-<!--
-	window.document.report_bug_form.lieu_naissance.focus();
--->
-</script>
-<?php  }*/?>
 <?php
 if ( $tpl_show_due_date ) {
 	date_finish_calendar( 'due_date', 'trigger' );

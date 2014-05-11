@@ -504,6 +504,7 @@ $s_autre_demarch = 'Autres d&eacute;marches';
 $s_temps = 'Temps pass&eacute;';
 $s_rep_comm = 'Notes';
 
+
 $s_aide_soc_fin_enum_string = '6:Don caisse de solidarit&eacute; (I), 1:Aide expatriation, 2:Domiciliation courrier(I), 3:Contact avec les banques, 4:Contact associations,5:R&eacute;daction de courrier autre (I)';
 $s_aide_alim_enum_string = '5:le Fourneau, 1:Secours adventiste, 2:Secours catholique, 3:St-Vincent de Paul, 4:Boutique sociale Foyal';
 $s_demarch_enum_string = '5:assistante sociale, 1:CAF, 2:CGSS, 3:Pr&eacute;fecture, 4:Mairie, 6:ASSOKA, 7:accompagnement autre';
