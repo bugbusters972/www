@@ -1104,6 +1104,7 @@
 $g_default_bug_attente ='';
 $g_default_bug_date_naissance ='';
 $g_default_bug_lieu_naissance ='';
+$g_default_bug_pays_naissance ='';
 $g_default_bug_nationalite ='';
 $g_default_bug_rue ='';
 $g_default_bug_adrs_suite ='';
@@ -2021,6 +2022,7 @@ $g_default_bug_note_general='';
 'attente',
 'date_naissance',
 'lieu_naissance',
+'pays_naissance',
 'nationalite',
 'rue',
 'adrs_suite',
@@ -2096,6 +2098,7 @@ $g_default_bug_note_general='';
 'attente',
 'date_naissance',
 'lieu_naissance',
+'pays_naissance',
 'nationalite',
 'rue',
 'adrs_suite',
@@ -2166,6 +2169,7 @@ $g_default_bug_note_general='';
 		'attente',
 		'date_naissance',
 		'lieu_naissance',
+		'pays_naissance',
 		'nationalite',
 		'rue',
 		'adrs_suite',
@@ -2241,6 +2245,7 @@ $g_default_bug_note_general='';
 'attente',
 'date_naissance',
 'lieu_naissance',
+'pays_naissance',
 'nationalite',
 'rue',
 'adrs_suite',
@@ -2330,6 +2335,7 @@ $g_default_bug_note_general='';
 'attente',
 'date_naissance',
 'lieu_naissance',
+'pays_naissance',
 'nationalite',
 'rue',
 'adrs_suite',

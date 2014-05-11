@@ -61,8 +61,9 @@
 	#nouveaux champs
 	#$t_bug_data->demande_rappel = gpc_get_int( 'demande_rappel', config_get( 'default_bug_demande_rappel'));
 $t_bug_data->attente = gpc_get_int( 'attente', config_get( 'default_bug_attente'));
-$t_bug_data->date_naissance = encDt(gpc_get_string( 'date_naissance', config_get( 'default_bug_date_naissance')));
+$t_bug_data->date_naissance = encDt( gpc_get_string( 'date_naissance', ''));
 $t_bug_data->lieu_naissance = gpc_get_string( 'lieu_naissance', config_get( 'default_bug_lieu_naissance'));
+$t_bug_data->pays_naissance = gpc_get_string( 'pays_naissance', config_get( 'default_bug_lieu_naissance'));
 $t_bug_data->nationalite = gpc_get_int( 'nationalite', config_get( 'default_bug_nationalite'));
 $t_bug_data->rue = gpc_get_string( 'rue', config_get( 'default_bug_rue'));
 $t_bug_data->adrs_suite = gpc_get_string( 'adrs_suite', config_get( 'default_bug_adrs_suite'));

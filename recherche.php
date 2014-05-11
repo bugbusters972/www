@@ -2,7 +2,8 @@
 require_once( 'core.php' );
 html_robots_noindex();
 html_page_top( lang_get( 'report_bug_link' ) );
-	include('salleattente_inc.php');
+
+include('salleattente_inc.php');
 $init = gpc_get_int( 'init','');
 $id = gpc_get_int( 'id','');
 $reporter = gpc_get_int( 'reporter_id','');
@@ -89,7 +90,7 @@ $nomepouse = gpc_get_string( 'nomepouse','');
 <tbody><tr>
 	<td class="form-title" colspan="7">
 		<span class="floatleft">
-		Liste des dossiers (50 max)</span>
+		Liste des dossiers trouv&eacute;s</span>
 
 		<span class="floatleft small"> &nbsp;&nbsp;&nbsp; </span>
 

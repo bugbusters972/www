@@ -440,6 +440,9 @@ Champ ('date_naissance','input','');
 #lieu_naissance
 Champ ('lieu_naissance','input','');
 
+#lieu_naissance
+Champ ('pays_naissance','input','');
+
 #nationalite
 Champ ('nationalite','select','');
 

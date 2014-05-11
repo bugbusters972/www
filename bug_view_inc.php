@@ -386,9 +386,11 @@ echo '<li><label class="description">', lang_get( date_naissance ), '</label>';
 
 echo '<p>'.string_display_line( date( config_get( 'short_date_format' ), $tpl_date_naissance ) ).' ('.
 age(date( 'Y/m/d',$tpl_date_naissance)).' ans)'.'</p></li>';
-
 			#lieu_naissance
 			Affiche('lieu_naissance');
+
+			#pays_naissance
+			Affiche('pays_naissance');
 
 			#nationalite
 			Affiche('nationalite');

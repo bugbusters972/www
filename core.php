@@ -432,8 +432,15 @@ function age($naiss)  {
 }
   
 function encDt($str) {
-$datez = explode('/',$str);
-return mktime(0, 0, 0, $datez[1], $datez[0], $datez[2]);
+	if($str !=''){
+		$datez = explode('/',$str);
+		$mois = intval($datez[1]);
+		$jour = intval($datez[0]);
+		$annee = intval($datez[2]);
+		return mktime(0, 0, 0, $mois, $jour, $annee);
+	}else{
+		return 0;
+	}
 }
 
 function Statexp($name){

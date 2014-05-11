@@ -757,28 +757,18 @@ function print_menu() {
 			}
 		}
 
-		# My View
+		#Accueil
 		$t_menu_options[] = '<li><a href="' . helper_mantis_url( 'my_view_page.php">' ) . lang_get( 'my_view_link' ) . '</a></li>';
 
-		# View Bugs
+		#Recherche
 		$t_menu_options[] = '<li><a href="' . helper_mantis_url( 'recherche.php">' ) . lang_get( 'view_bugs_link' ) . '</a></li>';
 
-		# Report Bugs
+		#Créer fiche
 		if( access_has_project_level( config_get( 'report_bug_threshold' ) ) ) {
 			$t_menu_options[] = '<li>'.string_get_bug_report_link().'</li>';
 		}
 
-		# Changelog Page
-		/*if( access_has_project_level( config_get( 'view_changelog_threshold' ) ) ) {
-			$t_menu_options[] = '<a href="' . helper_mantis_url( 'changelog_page.php">' ) . lang_get( 'changelog_link' ) . '</a>';
-		}*/
-
-		# Roadmap Page
-		/*if( access_has_project_level( config_get( 'roadmap_view_threshold' ) ) ) {
-			$t_menu_options[] = '<a href="' . helper_mantis_url( 'roadmap_page.php">' ) . lang_get( 'roadmap_link' ) . '</a>';
-		}*/
-
-		# Summary Page
+		# Statistiques
 		if( access_has_project_level( config_get( 'view_summary_threshold' ) ) ) {
 			$t_menu_options[] = '<li><a href="' . helper_mantis_url( 'summary_page.php">' ) . lang_get( 'summary_link' ) . '</a></li>';
 		}
@@ -854,8 +844,10 @@ function print_menu() {
 			$t_menu_options[] = '<li><a href="' . helper_mantis_url( 'billing_page.php">' ) . lang_get( 'time_tracking_billing_link' ) . '</a></li>';
 		}
 		
+		#Agenda
 		$t_menu_options[] = '<li><a href="' . helper_mantis_url( 'agenda.php">' ) . 'Agenda' . '</a></li>';
-		# Logout (no if anonymously logged in)
+		
+		#Deconnexion
 		if( !current_user_is_anonymous() ) {
 			$t_menu_options[] = '<li><a href="' . helper_mantis_url( 'logout_page.php">' ) . lang_get( 'logout_link' ) . '</a></li>';
 		}

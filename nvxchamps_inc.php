@@ -4,6 +4,7 @@
 $tpl_show_attente = in_array( 'attente', $t_fields );
 $tpl_show_date_naissance = in_array( 'date_naissance', $t_fields );
 $tpl_show_lieu_naissance = in_array( 'lieu_naissance', $t_fields );
+$tpl_show_pays_naissance = in_array( 'pays_naissance', $t_fields );
 $tpl_show_nationalite = in_array( 'nationalite', $t_fields );
 $tpl_show_rue = in_array( 'rue', $t_fields );
 $tpl_show_adrs_suite = in_array( 'adrs_suite', $t_fields );
@@ -57,6 +58,7 @@ $tpl_show_note_general = in_array( 'note_general', $t_fields );
 $tpl_attente = $tpl_show_attente ? string_display_line( get_enum_element( 'attente', $tpl_bug->attente  ) ) : '';
 $tpl_date_naissance = $tpl_show_date_naissance ? string_display_line( $tpl_bug->date_naissance ) : '';
 $tpl_lieu_naissance = $tpl_show_lieu_naissance ? string_display_line( $tpl_bug->lieu_naissance ) : '';
+$tpl_pays_naissance = $tpl_show_pays_naissance ? string_display_line( $tpl_bug->pays_naissance ) : '';
 $tpl_nationalite = $tpl_show_nationalite ? string_display_line( get_enum_element( 'nationalite', $tpl_bug->nationalite  ) ) : '';
 $tpl_rue = $tpl_show_rue ? string_display_line( $tpl_bug->rue ) : '';
 $tpl_adrs_suite = $tpl_show_adrs_suite ? string_display_line( $tpl_bug->adrs_suite  ) : '';

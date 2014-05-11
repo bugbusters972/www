@@ -1238,6 +1238,7 @@ $s_demande_rappel = 'Demande de rappel';
 $s_attente = 'Attente';
 $s_date_naissance = 'Date de naissance (JJ/MM/AAAA)';
 $s_lieu_naissance = 'Lieu de naissance';
+$s_pays_naissance = 'Pays de naissance';
 $s_nationalite = 'Nationalit&eacute;';
 $s_adresse = 'Adresse';
 $s_rue = 'Rue, voie, chemin';
