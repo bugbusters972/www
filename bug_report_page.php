@@ -546,6 +546,9 @@ Champ ('niv_scolr','select','');
 /* emploi*/
 Champ ('emploi','input','');
 
+/* entreprise*/
+Champ ('entreprise','input','');
+
 /* cddcdi*/
 Champ ('cddcdi','input','radio');
 

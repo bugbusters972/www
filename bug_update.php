@@ -61,6 +61,7 @@
 	$t_bug_data->attente 			= gpc_get_int( 'attente', config_get( 'default_bug_attente'));
 	$t_bug_data->date_naissance 	= encDt(gpc_get_string( 'date_naissance', config_get( 'default_bug_date_naissance')));
 	$t_bug_data->lieu_naissance 	= gpc_get_string( 'lieu_naissance', config_get( 'default_bug_lieu_naissance'));
+	$t_bug_data->pays_naissance 	= gpc_get_string( 'pays_naissance', config_get( 'default_bug_pays_naissance'));
 	$t_bug_data->nationalite 		= gpc_get_int( 'nationalite', config_get( 'default_bug_nationalite'));
 	$t_bug_data->rue 				= gpc_get_string( 'rue', config_get( 'default_bug_rue'));
 	$t_bug_data->adrs_suite 		= gpc_get_string( 'adrs_suite', config_get( 'default_bug_adrs_suite'));
@@ -87,6 +88,7 @@
 	$t_bug_data->sit_prof 			= gpc_get_int( 'sit_prof', config_get( 'default_bug_sit_prof'));
 	$t_bug_data->niv_scolr 			= gpc_get_int( 'niv_scolr', config_get( 'default_bug_niv_scolr'));
 	$t_bug_data->emploi 			= gpc_get_string( 'emploi', config_get( 'default_bug_emploi'));
+	$t_bug_data->entreprise 		= gpc_get_string( 'entreprise', config_get( 'default_bug_entreprise'));
 	$t_bug_data->cddcdi 			= gpc_get_int( 'cddcdi', config_get( 'default_bug_cddcdi'));
 	$t_bug_data->typ_contrat 		= gpc_get_int( 'typ_contrat', config_get( 'default_bug_typ_contrat'));
 	$t_bug_data->secteur_activ 		= gpc_get_int( 'secteur_activ', config_get( 'default_bug_secteur_activ'));

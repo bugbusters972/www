@@ -90,6 +90,7 @@ $t_bug_data->enf_recon = gpc_get_int( 'enf_recon', config_get( 'default_bug_enf_
 $t_bug_data->sit_prof = gpc_get_int( 'sit_prof', config_get( 'default_bug_sit_prof'));
 $t_bug_data->niv_scolr = gpc_get_int( 'niv_scolr', config_get( 'default_bug_niv_scolr'));
 $t_bug_data->emploi = gpc_get_string( 'emploi', config_get( 'default_bug_emploi'));
+$t_bug_data->entreprise = gpc_get_string( 'entreprise', config_get( 'default_bug_entreprise'));
 $t_bug_data->cddcdi = gpc_get_int( 'cddcdi', config_get( 'default_bug_cddcdi'));
 $t_bug_data->typ_contrat = gpc_get_int( 'typ_contrat', config_get( 'default_bug_typ_contrat'));
 $t_bug_data->secteur_activ = gpc_get_int( 'secteur_activ', config_get( 'default_bug_secteur_activ'));

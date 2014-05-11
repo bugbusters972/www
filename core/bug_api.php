@@ -104,6 +104,7 @@ class BugData {
 		protected $sit_prof= 0;
 		protected $niv_scolr= 0;
 		protected $emploi= '';
+		protected $entreprise= '';
 		protected $cddcdi= 0;
 		protected $typ_contrat= 0;
 		protected $secteur_activ= 0;
@@ -380,7 +381,7 @@ class BugData {
 					      last_updated,eta, 
 					      prenom, telephone,nom,nomepouse, version,build,
 					      profile_id, summary, view_state, sponsorship_total, sticky, fixed_in_version,
-					      target_version, due_date, attente, date_naissance, lieu_naissance,pays_naissance, nationalite, rue, adrs_suite, ville,  code_postal, pays, autre_hebergt, email, tel_domicile, tel_travail, orig_orient, connu_assoc, nom_logem, type_logem, complem_info, matrim_ant, matrim, nb_enfant, nb_enf_charge, sxage_enf, enf_pere, enf_recon, sit_prof, niv_scolr, emploi, cddcdi, typ_contrat, secteur_activ, type_ent, csp, ressources, prestations, mere_victime, plaintes, nb_plaintes, nb_plaintesko, plaintes_gend, nb_plaintesgend, nb_plainteskogend, maincour, nb_maincour, suite_plaintes, deja_vict, vict_enfce, contacte, note_general
+					      target_version, due_date, attente, date_naissance, lieu_naissance,pays_naissance, nationalite, rue, adrs_suite, ville,  code_postal, pays, autre_hebergt, email, tel_domicile, tel_travail, orig_orient, connu_assoc, nom_logem, type_logem, complem_info, matrim_ant, matrim, nb_enfant, nb_enf_charge, sxage_enf, enf_pere, enf_recon, sit_prof, niv_scolr, emploi, entreprise, cddcdi, typ_contrat, secteur_activ, type_ent, csp, ressources, prestations, mere_victime, plaintes, nb_plaintes, nb_plaintesko, plaintes_gend, nb_plaintesgend, nb_plainteskogend, maincour, nb_maincour, suite_plaintes, deja_vict, vict_enfce, contacte, note_general
 					    )
 					  VALUES
 					    ( " . db_param() .  ',' . db_param() . ","
@@ -389,9 +390,9 @@ class BugData {
 					      " . db_param() . ',' . db_param() . ',' . db_param() . ',' . db_param() . ",
 					      " . db_param() . ',' . db_param() . ',' . db_param() . ',' . db_param() . ',' . db_param() . ",
 					      " . db_param() . ',' . db_param() . ',' . db_param() . ',' . db_param() . ",
-					      " . db_param() . ',' . db_param() . ',' . db_param() . ',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() . ')';
+					      " . db_param() . ',' . db_param() . ',' . db_param() . ',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() .',' . db_param() . ')';
 
-		db_query_bound( $query, Array( $this->project_id, $this->reporter_id, $this->handler_id, $this->duplicate_id,  $this->sexe, $t_status, $this->resolution, $this->projection, $this->category_id, db_now(), db_now(), $this->eta, $this->prenom, $this->telephone, $this->nom, $this->nomepouse, $this->version, $this->build, $this->profile_id, $this->summary, $this->view_state, $this->sponsorship_total, $this->sticky, $this->fixed_in_version, $this->target_version, $this->due_date, $this->attente , $this->date_naissance , $this->lieu_naissance, $this->pays_naissance , $this->nationalite  , $this->rue , $this->adrs_suite , $this->ville ,  $this->code_postal , $this->pays , $this->autre_hebergt , $this->email , $this->tel_domicile , $this->tel_travail , $this->orig_orient , $this->connu_assoc , $this->nom_logem , $this->type_logem , $this->complem_info , $this->matrim_ant , $this->matrim , $this->nb_enfant , $this->nb_enf_charge , $this->sxage_enf , $this->enf_pere , $this->enf_recon , $this->sit_prof , $this->niv_scolr , $this->emploi , $this->cddcdi , $this->typ_contrat , $this->secteur_activ , $this->type_ent , $this->csp , $this->ressources , $this->prestations , $this->mere_victime , $this->plaintes , $this->nb_plaintes , $this->nb_plaintesko , $this->plaintes_gend , $this->nb_plaintesgend , $this->nb_plainteskogend , $this->maincour , $this->nb_maincour , $this->suite_plaintes , $this->deja_vict , $this->vict_enfce , $this->contacte , $this->note_general ) );
+		db_query_bound( $query, Array( $this->project_id, $this->reporter_id, $this->handler_id, $this->duplicate_id,  $this->sexe, $t_status, $this->resolution, $this->projection, $this->category_id, db_now(), db_now(), $this->eta, $this->prenom, $this->telephone, $this->nom, $this->nomepouse, $this->version, $this->build, $this->profile_id, $this->summary, $this->view_state, $this->sponsorship_total, $this->sticky, $this->fixed_in_version, $this->target_version, $this->due_date, $this->attente , $this->date_naissance , $this->lieu_naissance, $this->pays_naissance , $this->nationalite  , $this->rue , $this->adrs_suite , $this->ville ,  $this->code_postal , $this->pays , $this->autre_hebergt , $this->email , $this->tel_domicile , $this->tel_travail , $this->orig_orient , $this->connu_assoc , $this->nom_logem , $this->type_logem , $this->complem_info , $this->matrim_ant , $this->matrim , $this->nb_enfant , $this->nb_enf_charge , $this->sxage_enf , $this->enf_pere , $this->enf_recon , $this->sit_prof , $this->niv_scolr , $this->emploi , $this->entreprise , $this->cddcdi , $this->typ_contrat , $this->secteur_activ , $this->type_ent , $this->csp , $this->ressources , $this->prestations , $this->mere_victime , $this->plaintes , $this->nb_plaintes , $this->nb_plaintesko , $this->plaintes_gend , $this->nb_plaintesgend , $this->nb_plainteskogend , $this->maincour , $this->nb_maincour , $this->suite_plaintes , $this->deja_vict , $this->vict_enfce , $this->contacte , $this->note_general ) );
 
 		$this->id = db_insert_id( $t_bug_table );
 
@@ -484,6 +485,7 @@ class BugData {
 						sit_prof=" . db_param() . ",
 						niv_scolr=" . db_param() . ",
 						emploi=" . db_param() . ",
+						entreprise=" . db_param() . ",
 						cddcdi=" . db_param() . ",
 						typ_contrat=" . db_param() . ",
 						secteur_activ=" . db_param() . ",
@@ -545,6 +547,7 @@ class BugData {
 			$this->sit_prof,
 			$this->niv_scolr,
 			$this->emploi,
+			$this->entreprise,
 			$this->cddcdi,
 			$this->typ_contrat,
 			$this->secteur_activ,

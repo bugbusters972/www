@@ -1,7 +1,6 @@
 <?php
 $g_allow_browser_cache = 1;
 require_once( 'core.php' );
-
 require_once( 'ajax_api.php' );
 require_once( 'bug_api.php' );
 require_once( 'custom_field_api.php' );
@@ -318,6 +317,9 @@ echo print_documentation_link( 'date_naissance' ).'</label>
 #lieu_naissance
 Cedit ('lieu_naissance','input','','');
 
+#pays_naissance
+Cedit ('pays_naissance','input','','');
+
 #nationalite
 Cedit ('nationalite','select','','');
 
@@ -443,6 +445,9 @@ Cedit ('niv_scolr','select','','');
 
 /* emploi*/
 Cedit ('emploi','input','','');
+
+/* entreprise*/
+Cedit ('entreprise','input','','');
 
 /* cddcdi*/
 Cedit ('cddcdi','input','radio','');

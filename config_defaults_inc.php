@@ -1131,6 +1131,7 @@ $g_default_bug_enf_recon ='';
 $g_default_bug_sit_prof ='';
 $g_default_bug_niv_scolr ='';
 $g_default_bug_emploi ='';
+$g_default_bug_entreprise ='';
 $g_default_bug_cddcdi ='';
 $g_default_bug_typ_contrat ='';
 $g_default_bug_secteur_activ ='';
@@ -2048,7 +2049,7 @@ $g_default_bug_note_general='';
 'enf_recon',
 'sit_prof',
 'niv_scolr',
-'emploi',
+'emploi','entreprise',
 'cddcdi',
 'typ_contrat',
 'secteur_activ',
@@ -2124,7 +2125,7 @@ $g_default_bug_note_general='';
 'enf_recon',
 'sit_prof',
 'niv_scolr',
-'emploi',
+'emploi','entreprise',
 'cddcdi',
 'typ_contrat',
 'secteur_activ',
@@ -2195,7 +2196,7 @@ $g_default_bug_note_general='';
 		'enf_recon',
 		'sit_prof',
 		'niv_scolr',
-		'emploi',
+		'emploi','entreprise',
 		'cddcdi',
 		'typ_contrat',
 		'secteur_activ',
@@ -2271,7 +2272,7 @@ $g_default_bug_note_general='';
 'enf_recon',
 'sit_prof',
 'niv_scolr',
-'emploi',
+'emploi','entreprise',
 'cddcdi',
 'typ_contrat',
 'secteur_activ',
@@ -2361,7 +2362,7 @@ $g_default_bug_note_general='';
 'enf_recon',
 'sit_prof',
 'niv_scolr',
-'emploi',
+'emploi','entreprise',
 'cddcdi',
 'typ_contrat',
 'secteur_activ',

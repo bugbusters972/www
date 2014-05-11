@@ -1266,6 +1266,7 @@ $s_enf_recon = 'Combien d&apos;enfants sont reconnus par leur(s) p&egrave;re(s)?
 $s_sit_prof = 'Situation professionnelle';
 $s_niv_scolr = 'Niveau scolaire';
 $s_emploi = 'Emploi occup&eacute;';
+$s_entreprise = 'Entreprise/soci&eacute;t&eacute;/&eacute;tablissement';
 $s_cddcdi = 'Dur&eacute;e du contrat';
 $s_typ_contrat = 'Type de contrat';
 $s_secteur_activ = 'Secteur d&apos;activit&eacute;';

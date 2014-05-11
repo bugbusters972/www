@@ -484,7 +484,10 @@ echo '</fieldset><fieldset class="group-situation-entree"><legend>SITUATION &Agr
 			
 			#emploi
 			Affiche('emploi');
-			
+
+			#entreprise
+			Affiche('entreprise');
+
 			#cddcdi
 			Affiche('cddcdi');
 			
